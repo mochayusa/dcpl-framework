@@ -17,9 +17,11 @@ def load_dataset(data_path: str | Path) -> pd.DataFrame:
     data_path = Path(data_path)
     if not data_path.exists():
         raise FileNotFoundError(f"Dataset not found: {data_path}")
-    # NOTE: you used index_col=0; keep as-is for compatibility
-    df = pd.read_csv(data_path, index_col=0)
-    return df
+    if data_path.suffix.lower() == ".csv":
+        return pd.read_csv(data_path, index_col=0)
+    if data_path.suffix.lower() == ".parquet":
+        return pd.read_parquet(data_path)
+    raise ValueError(f"Unsupported dataset format: {data_path}")
 
 
 def prepare_run(
@@ -27,6 +29,7 @@ def prepare_run(
     results_root: str | Path = "results/runs",
     run_name: str = "run",
     include_interactions: bool = False,
+    schema: str | Path | None = None,
 ):
     """
     Creates run directory, extracts blocks, optionally builds interaction blocks,
@@ -44,7 +47,7 @@ def prepare_run(
     logger.info(f"Run directory created: {run_dir}")
 
     # ---- 1) Build blocks (already relaxed + alias/one-hot + numeric coercion)
-    X_ai, X_nonai, X_wl = get_blocks_relaxed(df)
+    X_ai, X_nonai, X_wl = get_blocks_relaxed(df, schema=schema)
 
     # ---- 2) Build interactions from prepared dataframe (canonical cols exist)
     interactions = None
@@ -55,7 +58,7 @@ def prepare_run(
             coerce_numeric=True,
             fillna_strategy="median",
         )
-        df_prepared = prepare_dataframe_for_blocks(df, cfg)
+        df_prepared = prepare_dataframe_for_blocks(df, cfg, schema=schema)
 
         # Sanity (optional): ensures the interaction builder won't KeyError
         # If something is missing here, it means alias map needs extension.

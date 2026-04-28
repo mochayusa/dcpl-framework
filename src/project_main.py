@@ -4,6 +4,7 @@ import argparse
 from pathlib import Path
 from typing import List
 
+from dcpl.schema import DEFAULT_SCHEMA_PATH, resolve_schema_path
 from experiments.run_baseline_split80_permodel_nested_multirun import (
     run_baseline_split80_permodel_nested_multirun_all_models,
 )
@@ -46,6 +47,7 @@ def _parse_args() -> argparse.Namespace:
     # ---- shared optional args ----
     for sp in [p_base, p_dcpl]:
         sp.add_argument("--per-model-dir", type=str, default=DEFAULT_PER_MODEL_DIR)
+        sp.add_argument("--schema", type=str, default=str(DEFAULT_SCHEMA_PATH))
         sp.add_argument("--target", type=str, default=DEFAULT_TARGET)
         sp.add_argument("--test-size", type=float, default=DEFAULT_TEST_SIZE)
         sp.add_argument("--base-seed", type=int, default=DEFAULT_BASE_SEED)
@@ -84,6 +86,7 @@ def run_baseline_cli(args: argparse.Namespace) -> None:
         test_size=float(args.test_size),
         results_root=Path(args.results_root) / f"{n_runs}x_baselines",
         run_name="baseline_split80",
+        schema=resolve_schema_path(args.schema),
     )
 
     print("\n=== BASELINE DONE ===")
@@ -107,6 +110,7 @@ def run_dcpl_cli(args: argparse.Namespace) -> None:
         test_size=float(args.test_size),
         results_root=Path(args.results_root) / f"{n_runs}x_dcpl",
         run_name="dcpl_split80",
+        schema=resolve_schema_path(args.schema),
     )
 
     print("\n=== DCPL DONE ===")
@@ -122,6 +126,7 @@ def main() -> None:
     per_model_dir = Path(args.per_model_dir)
     if not per_model_dir.exists():
         raise SystemExit(f"--per-model-dir does not exist: {per_model_dir}")
+    resolve_schema_path(args.schema)
 
     run_id = args.run_id or make_run_id()
     args.results_root = str(Path(args.results_root) / run_id)

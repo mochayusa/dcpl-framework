@@ -52,6 +52,7 @@ def run_dcpl_split80_permodel_nx(
     test_size: float = 0.20,
     results_root: str | Path = "results/runs",
     run_name: str = "dcpl_split80",
+    schema: str | Path | None = None,
 ) -> MultiRunResult:
     """
     Runs DCPL n_runs times with different seeds, then produces mean/std summaries.
@@ -81,6 +82,7 @@ def run_dcpl_split80_permodel_nx(
                 random_state=seed_i,
                 results_root=results_root,
                 run_name=run_name_i,
+                schema=schema,
             )
         )
         parent_dirs.append(parent_dir)

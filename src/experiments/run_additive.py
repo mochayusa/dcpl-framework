@@ -15,14 +15,16 @@ def run_additive_experiment(
     cv_mode="kfold10",         # "kfold10" or "logo_model"
     model_kind="ridge",        # ridge recommended
     results_root="results/runs",
-    run_name="additive"
+    run_name="additive",
+    schema: str | Path | None = None,
 ):
     df = load_dataset(data_path)
     run_dir, logger, X_ai, X_nonai, X_wl, interactions = prepare_run(
         df=df,
         results_root=results_root,
         run_name=run_name,
-        include_interactions=False
+        include_interactions=False,
+        schema=schema,
     )
 
     all_rows = []
@@ -79,6 +81,7 @@ def run_additive_experiment(
     save_manifest(run_dir, {
         "run_name": run_name,
         "data_path": str(data_path),
+        "schema": str(schema) if schema is not None else None,
         "targets": list(targets),
         "cv_mode": cv_mode,
         "model_kind": model_kind,

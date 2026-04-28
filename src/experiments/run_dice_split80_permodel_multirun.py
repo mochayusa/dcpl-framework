@@ -53,6 +53,7 @@ def run_dice_split80_permodel_nx(
     test_size: float = 0.20,
     results_root: str | Path = "results/runs",
     run_name: str = "dice_split80",
+    schema: str | Path | None = None,
 ) -> MultiRunResult:
     results_root = Path(results_root)
 
@@ -83,6 +84,7 @@ def run_dice_split80_permodel_nx(
                 include_interactions=include_interactions,
                 results_root=results_root,
                 run_name=run_name_i,
+                schema=schema,
             )
         )
         dt = time.perf_counter() - t0

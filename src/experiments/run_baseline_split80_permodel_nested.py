@@ -34,6 +34,7 @@ def run_baseline_split80_permodel_nested(
     model_kind: str = "rf_light",
     results_root: str | Path = "results/runs",
     run_name: str = "baseline_split80",
+    schema: str | Path | None = None,
 ):
     per_model_dir = Path(per_model_dir)
     files = sorted(per_model_dir.glob("*.csv"))
@@ -61,7 +62,7 @@ def run_baseline_split80_permodel_nested(
         (model_dir / "figures").mkdir(parents=True, exist_ok=True)
 
         # Blocks
-        X_ai, X_nonai, X_wl = get_blocks_relaxed(df)
+        X_ai, X_nonai, X_wl = get_blocks_relaxed(df, schema=schema)
         X_all = X_ai.join(X_nonai).join(X_wl)
 
         # 80/20 split (seeded)
@@ -125,6 +126,7 @@ def run_baseline_split80_permodel_nested(
                 "run_name": run_name,
                 "data_path": str(csv_path),
                 "target": target,
+                "schema": str(schema) if schema is not None else None,
                 "test_size": test_size,
                 "random_state": random_state,
                 "model_kind": model_kind,
@@ -152,6 +154,7 @@ def run_baseline_split80_permodel_nested(
                 "model_kind": model_kind,
                 "target": target,
                 "per_model_dir": str(per_model_dir),
+                "schema": str(schema) if schema is not None else None,
                 "global_summary": str(global_csv),
                 "n_models": int(len(global_summary)),
             },

@@ -6,6 +6,7 @@ from pathlib import Path
 from datetime import datetime
 import time
 
+from dcpl.schema import DEFAULT_SCHEMA_PATH, resolve_schema_path
 from experiments.run_dice_split80_permodel_multirun import run_dice_split80_permodel_nx
 
 
@@ -34,6 +35,7 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("n_runs", type=int, help="Number of runs, e.g., 30")
 
     p.add_argument("--per-model-dir", type=str, default=DEFAULT_PER_MODEL_DIR)
+    p.add_argument("--schema", type=str, default=str(DEFAULT_SCHEMA_PATH))
     p.add_argument("--target", type=str, default=DEFAULT_TARGET)
     p.add_argument("--test-size", type=float, default=DEFAULT_TEST_SIZE)
     p.add_argument("--base-seed", type=int, default=DEFAULT_BASE_SEED)
@@ -55,6 +57,7 @@ def main() -> None:
     per_model_dir = Path(args.per_model_dir)
     if not per_model_dir.exists():
         raise SystemExit(f"--per-model-dir does not exist: {per_model_dir}")
+    resolve_schema_path(args.schema)
 
     include_base = not bool(args.no_base)
     include_interactions = not bool(args.no_interactions)
@@ -79,6 +82,7 @@ def main() -> None:
         test_size=float(args.test_size),
         results_root=str(results_root),
         run_name="dice_split80",
+        schema=resolve_schema_path(args.schema),
     )
 
     total = time.perf_counter() - t0

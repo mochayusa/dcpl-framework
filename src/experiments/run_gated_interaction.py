@@ -16,6 +16,7 @@ def run_gated_interaction_experiment(
     run_name="gated_interaction",
     inner_splits: int = 10,
     gate_kind: str = "ridge",
+    schema: str | Path | None = None,
 ):
     """
     Full framework:
@@ -30,6 +31,7 @@ def run_gated_interaction_experiment(
         results_root=results_root,
         run_name=run_name,
         include_interactions=True,
+        schema=schema,
     )
 
     all_rows = []
@@ -114,6 +116,7 @@ def run_gated_interaction_experiment(
     save_manifest(run_dir, {
         "run_name": run_name,
         "data_path": str(data_path),
+        "schema": str(schema) if schema is not None else None,
         "targets": list(targets),
         "cv_mode": cv_mode,
         "gate_kind": gate_kind,

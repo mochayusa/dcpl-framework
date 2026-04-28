@@ -16,14 +16,16 @@ def run_interaction_experiment(
     base_kind="ridge",              # main effects learner
     inter_kind="ridge",             # residual interaction learner
     results_root="results/runs",
-    run_name="interaction"
+    run_name="interaction",
+    schema: str | Path | None = None,
 ):
     df = load_dataset(data_path)
     run_dir, logger, X_ai, X_nonai, X_wl, interactions = prepare_run(
         df=df,
         results_root=results_root,
         run_name=run_name,
-        include_interactions=True
+        include_interactions=True,
+        schema=schema,
     )
 
     all_rows = []
@@ -82,6 +84,7 @@ def run_interaction_experiment(
     save_manifest(run_dir, {
         "run_name": run_name,
         "data_path": str(data_path),
+        "schema": str(schema) if schema is not None else None,
         "targets": list(targets),
         "cv_mode": cv_mode,
         "base_kind": base_kind,

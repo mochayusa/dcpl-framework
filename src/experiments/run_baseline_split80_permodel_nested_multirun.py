@@ -46,6 +46,7 @@ def run_baseline_split80_permodel_nested_multirun_all_models(
     test_size: float = 0.20,
     results_root: str | Path = "results/runs",
     run_name: str = "baseline_split80",
+    schema: str | Path | None = None,
 ) -> MultiLearnerMultiRunResult:
     results_root = Path(results_root)
     out_dir = results_root / f"{run_name}__MULTI_BASELINES__{n_runs}x_base{base_seed}"
@@ -69,6 +70,7 @@ def run_baseline_split80_permodel_nested_multirun_all_models(
                     model_kind=mk,
                     results_root=results_root,
                     run_name=run_name_i,
+                    schema=schema,
                 )
             )
 

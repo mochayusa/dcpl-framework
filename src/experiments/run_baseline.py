@@ -15,14 +15,16 @@ def run_baseline_experiment(
     cv_mode="logo_model",                 # "kfold10" or "logo_model"
     model_kind="rf_light",             # "rf_light" or "ridge" or "nn" etc (see dcpl/models.py)
     results_root="results/runs",
-    run_name="baseline"
+    run_name="baseline",
+    schema: str | Path | None = None,
 ):
     df = load_dataset(data_path)
     run_dir, logger, X_ai, X_nonai, X_wl, interactions = prepare_run(
         df=df,
         results_root=results_root,
         run_name=run_name,
-        include_interactions=False
+        include_interactions=False,
+        schema=schema,
     )
 
     # Build monolithic X = [AI + NonAI + Workload]
@@ -83,6 +85,7 @@ def run_baseline_experiment(
     save_manifest(run_dir, {
         "run_name": run_name,
         "data_path": str(data_path),
+        "schema": str(schema) if schema is not None else None,
         "targets": list(targets),
         "cv_mode": cv_mode,
         "model_kind": model_kind,

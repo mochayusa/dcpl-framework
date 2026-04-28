@@ -37,6 +37,7 @@ def run_dcpl_split80_permodel(
     inner_splits: int = 5,
     results_root: str | Path = "results/runs",
     run_name: str = "dcpl_split80",
+    schema: str | Path | None = None,
 ):
     """
     DCPL (gated blocks + interactions) per-model evaluation with one 80/20 split per model.
@@ -70,7 +71,7 @@ def run_dcpl_split80_permodel(
             continue
 
         # blocks (relaxed schema)
-        X_ai, X_nonai, X_wl = get_blocks_relaxed(df)
+        X_ai, X_nonai, X_wl = get_blocks_relaxed(df, schema=schema)
 
         # 80/20 split (seeded + shuffled)
         idx_train, idx_test = train_test_split(
@@ -180,6 +181,7 @@ def run_dcpl_split80_permodel(
                 "run_name": run_name,
                 "data_path": str(csv_path),
                 "target": target,
+                "schema": str(schema) if schema is not None else None,
                 "test_size": test_size,
                 "random_state": random_state,
                 "gate_kind": gate_kind,
@@ -209,6 +211,7 @@ def run_dcpl_split80_permodel(
                 "inner_splits": inner_splits,
                 "target": target,
                 "per_model_dir": str(per_model_dir),
+                "schema": str(schema) if schema is not None else None,
                 "global_summary": str(global_csv),
                 "n_models": int(len(global_df)),
             },

@@ -1,0 +1,31 @@
+name: example_custom
+
+targets:
+  - target_runtime_ms
+
+blocks:
+  ai:
+    - model_params
+    - model_layers
+    - model_family_llama
+    - model_family_mistral
+  nonai:
+    - gpu_memory_gb
+    - gpu_bandwidth_gbps
+    - cpu_cores
+  workload:
+    - prompt_tokens
+    - batch_size
+
+aliases:
+  model_params:
+    - AI_model_n_parameters
+  model_layers:
+    - AI_model_n_layers
+  prompt_tokens:
+    - Workload_n_input_tokens
+
+categorical_levels:
+  model_family:
+    - llama
+    - mistral

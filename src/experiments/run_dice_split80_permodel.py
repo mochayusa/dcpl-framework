@@ -38,6 +38,7 @@ def run_dice_split80_permodel(
     include_interactions: bool = True,
     results_root: str | Path = "results/runs",
     run_name: str = "dice_split80",
+    schema: str | Path | None = None,
 ):
     
     from dice.framework import build_dice_features, dice_fit_predict
@@ -65,7 +66,7 @@ def run_dice_split80_permodel(
         (model_dir / "figures").mkdir(parents=True, exist_ok=True)
 
         # blocks
-        X_ai, X_nonai, X_wl = get_blocks_relaxed(df)
+        X_ai, X_nonai, X_wl = get_blocks_relaxed(df, schema=schema)
 
         # interactions
         df_blocks = pd.concat([X_ai, X_nonai, X_wl], axis=1)
@@ -137,6 +138,7 @@ def run_dice_split80_permodel(
                 "run_name": run_name,
                 "data_path": str(csv_path),
                 "target": target,
+                "schema": str(schema) if schema is not None else None,
                 "test_size": test_size,
                 "random_state": random_state,
                 "learner_kind": learner_kind,
@@ -162,6 +164,7 @@ def run_dice_split80_permodel(
                 "kind": "per_model_dice_split80",
                 "learner_kind": learner_kind,
                 "target": target,
+                "schema": str(schema) if schema is not None else None,
                 "global_summary": str(global_csv),
                 "n_models": int(len(global_df)),
             },
