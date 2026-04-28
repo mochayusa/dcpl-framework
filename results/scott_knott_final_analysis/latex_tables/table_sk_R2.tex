@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Scott--Knott summary for metric R2 (Mean$\pm$Std over runs). Cells with rank 1 are highlighted.}
+\label{tab:sk_r2}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{lcccccccccc}
+\toprule
+LLM & dcpl\_gate\_ridge & dcpl\_gate\_lr & dcpl\_gate\_nn & dcpl\_gate\_rf & baseline\_rf\_light & baseline\_nn & baseline\_llm\_pilot & baseline\_lr & baseline\_ridge & baseline\_DaL \\
+\midrule
+data\_EleutherAI\_gpt-neox-20b & \cellcolor{red!15}\textbf{0.599$\pm$0.022 {\scriptsize (r=1)}} & 0.599$\pm$0.022 {\scriptsize (r=2)} & 0.606$\pm$0.021 {\scriptsize (r=3)} & 0.574$\pm$0.025 {\scriptsize (r=3)} & 0.581$\pm$0.029 {\scriptsize (r=4)} & 0.438$\pm$0.021 {\scriptsize (r=5)} & 0.477$\pm$0.020 {\scriptsize (r=6)} & 0.311$\pm$0.008 {\scriptsize (r=6)} & 0.311$\pm$0.008 {\scriptsize (r=7)} & 0.174$\pm$0.053 {\scriptsize (r=8)} \\
+data\_Salesforce\_codegen2-16B & \cellcolor{red!15}\textbf{0.312$\pm$0.092 {\scriptsize (r=1)}} & 0.311$\pm$0.092 {\scriptsize (r=2)} & 0.298$\pm$0.096 {\scriptsize (r=2)} & 0.201$\pm$0.134 {\scriptsize (r=4)} & 0.288$\pm$0.141 {\scriptsize (r=3)} & 0.305$\pm$0.070 {\scriptsize (r=3)} & 0.361$\pm$0.105 {\scriptsize (r=3)} & 0.238$\pm$0.025 {\scriptsize (r=3)} & 0.238$\pm$0.025 {\scriptsize (r=3)} & 0.131$\pm$0.047 {\scriptsize (r=5)} \\
+data\_bigcode\_starcoder & \cellcolor{red!15}\textbf{0.631$\pm$0.015 {\scriptsize (r=1)}} & 0.631$\pm$0.015 {\scriptsize (r=2)} & 0.634$\pm$0.016 {\scriptsize (r=4)} & 0.607$\pm$0.022 {\scriptsize (r=4)} & 0.622$\pm$0.018 {\scriptsize (r=3)} & 0.453$\pm$0.018 {\scriptsize (r=5)} & 0.489$\pm$0.015 {\scriptsize (r=7)} & 0.317$\pm$0.007 {\scriptsize (r=7)} & 0.317$\pm$0.007 {\scriptsize (r=6)} & 0.129$\pm$0.180 {\scriptsize (r=7)} \\
+data\_bigscience\_mt0-xxl & 0.389$\pm$0.049 {\scriptsize (r=2)} & 0.389$\pm$0.049 {\scriptsize (r=3)} & 0.400$\pm$0.052 {\scriptsize (r=4)} & 0.355$\pm$0.067 {\scriptsize (r=4)} & 0.335$\pm$0.090 {\scriptsize (r=5)} & 0.380$\pm$0.068 {\scriptsize (r=5)} & \cellcolor{red!15}\textbf{0.442$\pm$0.056 {\scriptsize (r=1)}} & 0.277$\pm$0.025 {\scriptsize (r=5)} & 0.277$\pm$0.025 {\scriptsize (r=6)} & 0.106$\pm$0.055 {\scriptsize (r=7)} \\
+data\_google\_flan-t5-xl & \cellcolor{red!15}\textbf{0.658$\pm$0.016 {\scriptsize (r=1)}} & 0.658$\pm$0.016 {\scriptsize (r=2)} & 0.664$\pm$0.016 {\scriptsize (r=3)} & 0.638$\pm$0.018 {\scriptsize (r=3)} & 0.649$\pm$0.022 {\scriptsize (r=4)} & 0.455$\pm$0.021 {\scriptsize (r=5)} & 0.497$\pm$0.023 {\scriptsize (r=6)} & 0.292$\pm$0.007 {\scriptsize (r=6)} & 0.292$\pm$0.007 {\scriptsize (r=7)} & 0.135$\pm$0.033 {\scriptsize (r=8)} \\
+data\_google\_flan-t5-xxl & \cellcolor{red!15}\textbf{0.653$\pm$0.022 {\scriptsize (r=1)}} & 0.653$\pm$0.022 {\scriptsize (r=2)} & 0.655$\pm$0.021 {\scriptsize (r=3)} & 0.634$\pm$0.028 {\scriptsize (r=3)} & 0.634$\pm$0.033 {\scriptsize (r=4)} & 0.437$\pm$0.026 {\scriptsize (r=4)} & 0.492$\pm$0.028 {\scriptsize (r=5)} & 0.292$\pm$0.011 {\scriptsize (r=5)} & 0.292$\pm$0.011 {\scriptsize (r=6)} & 0.125$\pm$0.059 {\scriptsize (r=5)} \\
+data\_google\_flan-ul2 & \cellcolor{red!15}\textbf{0.636$\pm$0.053 {\scriptsize (r=1)}} & 0.636$\pm$0.053 {\scriptsize (r=2)} & 0.635$\pm$0.050 {\scriptsize (r=4)} & 0.592$\pm$0.055 {\scriptsize (r=4)} & 0.615$\pm$0.070 {\scriptsize (r=3)} & 0.436$\pm$0.028 {\scriptsize (r=5)} & 0.503$\pm$0.042 {\scriptsize (r=6)} & 0.298$\pm$0.012 {\scriptsize (r=6)} & 0.298$\pm$0.012 {\scriptsize (r=7)} & 0.141$\pm$0.036 {\scriptsize (r=6)} \\
+data\_ibm\_mpt-7b-instruct2 & 0.440$\pm$0.039 {\scriptsize (r=2)} & 0.440$\pm$0.039 {\scriptsize (r=3)} & \cellcolor{red!15}\textbf{0.468$\pm$0.041 {\scriptsize (r=1)}} & \cellcolor{red!15}\textbf{0.458$\pm$0.041 {\scriptsize (r=1)}} & 0.323$\pm$0.079 {\scriptsize (r=5)} & 0.401$\pm$0.052 {\scriptsize (r=5)} & 0.440$\pm$0.039 {\scriptsize (r=4)} & 0.283$\pm$0.019 {\scriptsize (r=5)} & 0.283$\pm$0.019 {\scriptsize (r=6)} & 0.109$\pm$0.045 {\scriptsize (r=7)} \\
+data\_llama-13b & \cellcolor{red!15}\textbf{0.630$\pm$0.016 {\scriptsize (r=1)}} & 0.630$\pm$0.016 {\scriptsize (r=2)} & 0.635$\pm$0.017 {\scriptsize (r=3)} & 0.611$\pm$0.021 {\scriptsize (r=3)} & 0.620$\pm$0.021 {\scriptsize (r=4)} & 0.451$\pm$0.016 {\scriptsize (r=5)} & 0.485$\pm$0.017 {\scriptsize (r=6)} & 0.315$\pm$0.007 {\scriptsize (r=6)} & 0.315$\pm$0.007 {\scriptsize (r=7)} & 0.159$\pm$0.041 {\scriptsize (r=8)} \\
+data\_llama-7b & \cellcolor{red!15}\textbf{0.653$\pm$0.015 {\scriptsize (r=1)}} & 0.653$\pm$0.015 {\scriptsize (r=2)} & 0.659$\pm$0.016 {\scriptsize (r=3)} & 0.635$\pm$0.019 {\scriptsize (r=3)} & 0.644$\pm$0.021 {\scriptsize (r=4)} & 0.450$\pm$0.017 {\scriptsize (r=5)} & 0.480$\pm$0.018 {\scriptsize (r=6)} & 0.307$\pm$0.006 {\scriptsize (r=6)} & 0.307$\pm$0.006 {\scriptsize (r=7)} & 0.151$\pm$0.026 {\scriptsize (r=8)} \\
+\bottomrule
+\end{tabular}
+\end{table}

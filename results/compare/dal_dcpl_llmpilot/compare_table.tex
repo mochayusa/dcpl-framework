@@ -1,0 +1,61 @@
+\begin{table}[t]
+\centering
+\small
+\caption{DaL vs LLM Pilot vs rf\_light vs DCPL (NN gate) comparison using mean$\pm$std across runs.}
+\label{tab:dal_llmpilot_rflight_dcpl}
+\begin{tabular}{llcccc}
+\toprule
+Dataset & Metric & DaL & LLM\_Pilot & rf\_light & DCPL(nn\_gate) \\
+\midrule
+EleutherAI\_gpt-neox-20b & MAE & 200.3305$\pm$23.8628 & 152.5965$\pm$2.2099 & 130.1210$\pm$1.6233 & \textbf{126.7045$\pm$2.2717} \\
+EleutherAI\_gpt-neox-20b & MRE & 435.4256$\pm$190.2283 & 195.3589$\pm$13.4311 & \textbf{122.6706$\pm$2.8056} & 138.3751$\pm$17.2761 \\
+EleutherAI\_gpt-neox-20b & R2 & 0.2213$\pm$0.0675 & 0.4774$\pm$0.0200 & 0.5811$\pm$0.0294 & \textbf{0.6062$\pm$0.0215} \\
+EleutherAI\_gpt-neox-20b & RMSE & 514.6350$\pm$28.9564 & 425.7326$\pm$13.4217 & 380.8884$\pm$12.0515 & \textbf{369.4246$\pm$11.0585} \\
+\addlinespace
+Salesforce\_codegen2-16B & MAE & 159.6668$\pm$15.8050 & \textbf{116.0922$\pm$6.6578} & 121.7600$\pm$6.3091 & 123.7951$\pm$9.5125 \\
+Salesforce\_codegen2-16B & MRE & 1146.3427$\pm$238.8872 & 385.1346$\pm$28.2825 & \textbf{287.3755$\pm$22.2288} & 558.8143$\pm$230.5910 \\
+Salesforce\_codegen2-16B & R2 & 0.0741$\pm$0.0467 & \textbf{0.3612$\pm$0.1066} & 0.2877$\pm$0.1438 & 0.2982$\pm$0.0978 \\
+Salesforce\_codegen2-16B & RMSE & 394.4942$\pm$51.8109 & \textbf{316.9841$\pm$37.6693} & 333.3734$\pm$35.4871 & 332.9418$\pm$42.1472 \\
+\addlinespace
+bigcode\_starcoder & MAE & 214.5659$\pm$21.5069 & 157.1937$\pm$2.1299 & 130.1782$\pm$1.7216 & \textbf{128.6970$\pm$2.2816} \\
+bigcode\_starcoder & MRE & 314.0096$\pm$100.0288 & 147.1316$\pm$3.7417 & \textbf{101.6943$\pm$1.4706} & 107.1582$\pm$7.9584 \\
+bigcode\_starcoder & R2 & 0.2193$\pm$0.0591 & 0.4892$\pm$0.0151 & 0.6219$\pm$0.0186 & \textbf{0.6345$\pm$0.0163} \\
+bigcode\_starcoder & RMSE & 547.0593$\pm$26.0129 & 440.9492$\pm$10.2925 & 379.2949$\pm$11.1063 & \textbf{372.9693$\pm$10.8341} \\
+\addlinespace
+bigscience\_mt0-xxl & MAE & 225.4800$\pm$10.5161 & \textbf{158.1156$\pm$7.5633} & 164.9895$\pm$9.1738 & 161.6300$\pm$10.5825 \\
+bigscience\_mt0-xxl & MRE & 602.7381$\pm$76.1880 & 217.3547$\pm$8.7371 & \textbf{189.2020$\pm$12.7323} & 236.9239$\pm$47.8376 \\
+bigscience\_mt0-xxl & R2 & 0.1282$\pm$0.0637 & \textbf{0.4423$\pm$0.0565} & 0.3347$\pm$0.0912 & 0.3999$\pm$0.0532 \\
+bigscience\_mt0-xxl & RMSE & 491.1184$\pm$30.9493 & \textbf{391.8993$\pm$34.7514} & 427.4763$\pm$40.4615 & 406.9294$\pm$38.1520 \\
+\addlinespace
+google\_flan-t5-xl & MAE & 137.7958$\pm$12.1765 & 108.0090$\pm$1.4510 & 85.3022$\pm$1.1232 & \textbf{84.6262$\pm$1.9852} \\
+google\_flan-t5-xl & MRE & 380.8243$\pm$161.2137 & 203.0663$\pm$10.7064 & \textbf{127.6154$\pm$1.8776} & 137.6936$\pm$18.6437 \\
+google\_flan-t5-xl & R2 & 0.2199$\pm$0.0844 & 0.4967$\pm$0.0238 & 0.6486$\pm$0.0220 & \textbf{0.6636$\pm$0.0158} \\
+google\_flan-t5-xl & RMSE & 386.9328$\pm$28.4066 & 308.3294$\pm$11.2549 & 257.4813$\pm$8.2586 & \textbf{252.0429$\pm$8.1612} \\
+\addlinespace
+google\_flan-t5-xxl & MAE & 129.3914$\pm$9.4154 & 104.6928$\pm$1.8046 & 83.6672$\pm$1.2817 & \textbf{81.0625$\pm$1.9343} \\
+google\_flan-t5-xxl & MRE & 340.5108$\pm$180.4147 & 221.6041$\pm$9.2958 & \textbf{143.4714$\pm$3.3255} & 146.1181$\pm$22.5935 \\
+google\_flan-t5-xxl & R2 & 0.2126$\pm$0.0563 & 0.4925$\pm$0.0282 & 0.6340$\pm$0.0332 & \textbf{0.6546$\pm$0.0211} \\
+google\_flan-t5-xxl & RMSE & 358.9541$\pm$22.0142 & 292.5866$\pm$13.3868 & 248.1160$\pm$9.5502 & \textbf{241.2967$\pm$10.2634} \\
+\addlinespace
+google\_flan-ul2 & MAE & 113.3813$\pm$9.3600 & 94.1239$\pm$1.9238 & 78.2082$\pm$1.9130 & \textbf{77.7476$\pm$2.3043} \\
+google\_flan-ul2 & MRE & 270.9734$\pm$118.8846 & 202.3800$\pm$11.1199 & \textbf{138.2508$\pm$3.1491} & 154.1751$\pm$28.0255 \\
+google\_flan-ul2 & R2 & 0.2471$\pm$0.0769 & 0.5034$\pm$0.0431 & 0.6149$\pm$0.0716 & \textbf{0.6347$\pm$0.0508} \\
+google\_flan-ul2 & RMSE & 329.1375$\pm$22.6841 & 263.1195$\pm$13.9308 & 230.8603$\pm$18.3421 & \textbf{225.3089$\pm$15.2392} \\
+\addlinespace
+ibm\_mpt-7b-instruct2 & MAE & 311.0068$\pm$18.1834 & 208.7516$\pm$8.1474 & 212.3597$\pm$9.3390 & \textbf{194.5883$\pm$10.2528} \\
+ibm\_mpt-7b-instruct2 & MRE & 1376.5466$\pm$275.1634 & 350.8368$\pm$23.0365 & \textbf{250.1720$\pm$8.6871} & 322.8674$\pm$66.5888 \\
+ibm\_mpt-7b-instruct2 & R2 & 0.1458$\pm$0.0482 & 0.4398$\pm$0.0397 & 0.3229$\pm$0.0804 & \textbf{0.4681$\pm$0.0420} \\
+ibm\_mpt-7b-instruct2 & RMSE & 725.9245$\pm$43.7429 & 571.3635$\pm$38.0953 & 626.9693$\pm$44.4145 & \textbf{556.5280$\pm$36.5187} \\
+\addlinespace
+llama-13b & MAE & 181.0978$\pm$9.2589 & 161.8954$\pm$2.1315 & 133.8183$\pm$2.0729 & \textbf{131.0330$\pm$2.7718} \\
+llama-13b & MRE & 185.0204$\pm$47.4065 & 171.6349$\pm$4.4501 & \textbf{117.3256$\pm$1.5044} & 122.4735$\pm$15.1596 \\
+llama-13b & R2 & 0.3433$\pm$0.0702 & 0.4848$\pm$0.0170 & 0.6198$\pm$0.0209 & \textbf{0.6352$\pm$0.0170} \\
+llama-13b & RMSE & 506.8875$\pm$28.4549 & 458.9676$\pm$15.6646 & 394.0767$\pm$11.8969 & \textbf{386.1757$\pm$14.7334} \\
+\addlinespace
+llama-7b & MAE & 230.5194$\pm$13.0714 & 200.2360$\pm$2.1345 & 160.7912$\pm$1.6852 & \textbf{157.4075$\pm$2.9052} \\
+llama-7b & MRE & 180.0118$\pm$60.8408 & 161.3044$\pm$3.5433 & \textbf{110.1542$\pm$1.0954} & 111.8950$\pm$11.3860 \\
+llama-7b & R2 & 0.3206$\pm$0.0523 & 0.4801$\pm$0.0181 & 0.6440$\pm$0.0217 & \textbf{0.6592$\pm$0.0165} \\
+llama-7b & RMSE & 668.2938$\pm$36.2881 & 578.2696$\pm$13.1868 & 478.1894$\pm$10.4787 & \textbf{468.0463$\pm$10.8132} \\
+\bottomrule
+\end{tabular}
+\end{table}

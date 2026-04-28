@@ -1,0 +1,53 @@
+# OS / editor noise
+.DS_Store
+.RData
+.Rhistory
+.pytest_cache/
+.vscode/
+__pycache__/
+*.py[cod]
+
+# Python / notebook artifacts
+.ipynb_checkpoints/
+
+# Keep the repository focused on code, configs, compact experiment inputs,
+# and summary outputs. Ignore heavyweight raw data and generated run dumps.
+
+# Data: ignore everything by default, then re-include curated experiment inputs.
+data/**
+!data/
+!data/dal_datasets/
+!data/dal_datasets/*.csv
+!data/infpop_real/
+!data/infpop_real/raw_data/
+!data/infpop_real/raw_data/Inf_pop_allData.csv
+!data/llm_pilot_data/
+!data/llm_pilot_data/dal_ready/
+!data/llm_pilot_data/dal_ready/per_model_final/
+!data/llm_pilot_data/dal_ready/per_model_final/*.csv
+!data/llm_pilot_data/raw_data/
+!data/llm_pilot_data/raw_data/llm_config_dal.csv
+!data/llm_pilot_data/raw_data/per_model_counts_full_data.csv
+!data/llm_pilot_data/raw_data/sample_per_model_gpu.csv
+!data/llm_pilot_data/raw_data/sampled_latency_stratified_10k.csv
+!data/llm_pilot_data/raw_data/sample_data/
+!data/llm_pilot_data/raw_data/sample_data/**
+
+# Explicitly keep the large raw training/evaluation tables out of GitHub.
+data/llm_pilot_data/final_data/
+data/llm_pilot_data/preliminary/
+data/llm_pilot_data/raw_data/interaction_data_final.csv
+data/llm_pilot_data/raw_data/merged_all_models.csv
+data/llm_pilot_data/raw_data/performance_data_for_AIware_final.csv
+data/llm_pilot_data/raw_data/performance_data_no_objects.csv
+data/llm_pilot_data/raw_data/df_encoded_ok.csv
+data/llm_pilot_data/raw_data/per_model/
+
+# Results: keep curated summaries/figures, ignore large rerun outputs and temp files.
+results/runs/
+results/tmp/
+results/.DS_Store
+results/**/.DS_Store
+results/preliminary/tsne/tsne_embedding.csv
+results/structured/predictions_long.parquet
+

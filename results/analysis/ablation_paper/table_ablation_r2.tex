@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Ablation study across per-LLM datasets over 30 repeated holdout runs. M1 uses only main effects, while M2a--M3 progressively add interaction groups. Best mean R$^2$ per row is highlighted.}
+\label{tab:ablation_r2}
+\begin{tabular}{lcccc}
+\toprule
+Model & M1 & M2a & M2b & M3 \\
+\midrule
+EleutherAI\_gpt-neox-20b & 0.585$\pm$0.022 & 0.585$\pm$0.022 & 0.586$\pm$0.022 & \textbf{0.599$\pm$0.023} \\
+Salesforce\_codegen2-16B & 0.317$\pm$0.096 & 0.315$\pm$0.097 & \textbf{0.319$\pm$0.098} & 0.319$\pm$0.098 \\
+bigcode\_starcoder & 0.602$\pm$0.015 & 0.602$\pm$0.015 & 0.602$\pm$0.016 & \textbf{0.631$\pm$0.015} \\
+bigscience\_mt0-xxl & 0.383$\pm$0.046 & 0.382$\pm$0.046 & 0.381$\pm$0.046 & \textbf{0.390$\pm$0.049} \\
+google\_flan-t5-xl & 0.640$\pm$0.015 & 0.640$\pm$0.015 & 0.640$\pm$0.015 & \textbf{0.658$\pm$0.016} \\
+google\_flan-t5-xxl & 0.636$\pm$0.022 & 0.636$\pm$0.022 & 0.636$\pm$0.023 & \textbf{0.653$\pm$0.022} \\
+google\_flan-ul2 & 0.636$\pm$0.051 & 0.636$\pm$0.051 & \textbf{0.636$\pm$0.053} & 0.636$\pm$0.055 \\
+ibm\_mpt-7b-instruct2 & 0.438$\pm$0.042 & \textbf{0.438$\pm$0.042} & 0.438$\pm$0.041 & 0.436$\pm$0.042 \\
+llama-13b & 0.606$\pm$0.017 & 0.606$\pm$0.017 & 0.606$\pm$0.017 & \textbf{0.630$\pm$0.017} \\
+llama-7b & 0.617$\pm$0.013 & 0.617$\pm$0.013 & 0.618$\pm$0.013 & \textbf{0.653$\pm$0.015} \\
+\bottomrule
+\end{tabular}
+\end{table}

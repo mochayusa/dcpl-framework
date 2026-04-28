@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott summary: number of LLMs for which each method attains rank $r=1$ per metric.}
+\label{tab:sk_summary_rank1_by_metric}
+\begin{tabular}{l|ccccc}
+\hline
+\textbf{Method} & \textbf{R2} & \textbf{MAE} & \textbf{RMSE} & \textbf{MRE} & \textbf{Total} \\
+\hline
+baseline\_llm\_pilot & 1 & 0 & 0 & 0 & 1 \\
+baseline\_nn & 0 & 0 & 0 & 3 & 3 \\
+baseline\_rf\_light & 0 & 3 & 0 & 7 & 10 \\
+baseline\_ridge & 0 & 0 & 0 & 1 & 1 \\
+dcpl\_gate\_lr & 0 & 2 & 3 & 0 & 5 \\
+dcpl\_gate\_nn & 1 & 4 & 1 & 0 & 6 \\
+dcpl\_gate\_rf & 1 & 4 & 2 & 3 & 10 \\
+dcpl\_gate\_ridge & 8 & 0 & 7 & 0 & 15 \\
+\hline
+\textbf{Total} & \textbf{11} & \textbf{13} & \textbf{13} & \textbf{14} & \textbf{51} \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Baseline vs DICE (learner=rf) on MRE (mean over runs). $\Delta$ = DICE - Baseline.}
+\label{tab:baseline-vs-dice-rf-light-MRE}
+\begin{tabular}{lrrrr}
+\toprule
+Dataset & Baseline & DICE & $\Delta$ & $\%\Delta$ \\
+\midrule
+Salesforce\_codegen2-16B & 952.364 & 952.317 & -0.047 & -0.00\% \\
+ibm\_mpt-7b-instruct2 & 903.795 & 903.798 & 0.004 & 0.00\% \\
+bigscience\_mt0-xxl & 389.179 & 389.191 & 0.012 & 0.00\% \\
+llama-7b & 149.440 & 149.457 & 0.017 & 0.01\% \\
+bigcode\_starcoder & 114.609 & 114.635 & 0.026 & 0.02\% \\
+llama-13b & 160.480 & 160.539 & 0.059 & 0.04\% \\
+google\_flan-ul2 & 250.899 & 250.988 & 0.089 & 0.04\% \\
+EleutherAI\_gpt-neox-20b & 169.605 & 169.730 & 0.125 & 0.07\% \\
+google\_flan-t5-xl & 273.027 & 273.167 & 0.140 & 0.05\% \\
+google\_flan-t5-xxl & 338.794 & 339.114 & 0.321 & 0.09\% \\
+\bottomrule
+\end{tabular}
+\end{table}

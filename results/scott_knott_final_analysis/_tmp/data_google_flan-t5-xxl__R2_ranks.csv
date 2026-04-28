@@ -1,0 +1,11 @@
+"Method","Group"
+"baseline_DaL",1
+"baseline_llm_pilot",1
+"baseline_lr",1
+"baseline_nn",2
+"baseline_rf_light",2
+"baseline_ridge",3
+"dcpl_gate_lr",4
+"dcpl_gate_nn",5
+"dcpl_gate_rf",5
+"dcpl_gate_ridge",6

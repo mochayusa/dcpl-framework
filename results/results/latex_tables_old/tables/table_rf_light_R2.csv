@@ -1,0 +1,11 @@
+Dataset,Baseline,DICE,Delta,DeltaPct
+data_Salesforce_codegen2-16B,0.199,0.199,0.000,0.06\%
+data_bigcode_starcoder,0.574,0.574,-0.000,-0.00\%
+data_llama-7b,0.530,0.530,-0.000,-0.00\%
+data_EleutherAI_gpt-neox-20b,0.536,0.536,-0.000,-0.00\%
+data_llama-13b,0.535,0.535,-0.000,-0.01\%
+data_ibm_mpt-7b-instruct2,0.324,0.324,-0.000,-0.02\%
+data_google_flan-t5-xl,0.467,0.467,-0.000,-0.03\%
+data_google_flan-ul2,0.433,0.433,-0.000,-0.04\%
+data_google_flan-t5-xxl,0.432,0.431,-0.000,-0.08\%
+data_bigscience_mt0-xxl,0.334,0.333,-0.001,-0.18\%

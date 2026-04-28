@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Median throughput (tokens/sec) by GPU type and concurrency bin.}
+\label{tab:nonai_workload_conc_median_throughput}
+\begin{tabular}{lrrrrr}
+\toprule
+NonAI_gpu_type & A10 & A100 & H100 & T4 & V100 \\
+concurrency_bin &  &  &  &  &  \\
+\midrule
+(-0.001, 13.0] & 16.77 & 27.08 & 48.22 & 13.75 & 14.05 \\
+(13.0, 35.0] & 37.18 & 46.85 & 62.79 & 33.68 & 40.04 \\
+(35.0, 78.0] & 76.31 & 83.21 & 94.08 & 87.65 & 84.52 \\
+(78.0, 700.0] & 170.73 & 185.55 & 206.96 & 164.87 & 161.68 \\
+\bottomrule
+\end{tabular}
+
+\end{table}

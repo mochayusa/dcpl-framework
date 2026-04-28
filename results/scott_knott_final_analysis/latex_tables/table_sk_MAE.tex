@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Scott--Knott summary for metric MAE (Mean$\pm$Std over runs). Cells with rank 1 are highlighted.}
+\label{tab:sk_mae}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{lcccccccccc}
+\toprule
+LLM & baseline\_rf\_light & dcpl\_gate\_nn & dcpl\_gate\_ridge & dcpl\_gate\_rf & dcpl\_gate\_lr & baseline\_nn & baseline\_ridge & baseline\_llm\_pilot & baseline\_lr & baseline\_DaL \\
+\midrule
+data\_EleutherAI\_gpt-neox-20b & 130.12$\pm$1.60 {\scriptsize (r=2)} & 126.70$\pm$2.23 {\scriptsize (r=4)} & 130.15$\pm$1.69 {\scriptsize (r=3)} & \cellcolor{red!15}\textbf{129.37$\pm$1.53 {\scriptsize (r=1)}} & 130.15$\pm$1.69 {\scriptsize (r=4)} & 158.77$\pm$3.76 {\scriptsize (r=5)} & 196.37$\pm$2.11 {\scriptsize (r=4)} & 152.60$\pm$2.17 {\scriptsize (r=6)} & 196.37$\pm$2.11 {\scriptsize (r=6)} & 211.05$\pm$12.07 {\scriptsize (r=7)} \\
+data\_Salesforce\_codegen2-16B & 121.76$\pm$6.20 {\scriptsize (r=5)} & \cellcolor{red!15}\textbf{123.80$\pm$9.35 {\scriptsize (r=1)}} & 126.00$\pm$6.99 {\scriptsize (r=3)} & 134.04$\pm$7.37 {\scriptsize (r=6)} & 126.25$\pm$7.49 {\scriptsize (r=5)} & 125.15$\pm$6.16 {\scriptsize (r=2)} & 141.00$\pm$5.81 {\scriptsize (r=5)} & 116.09$\pm$6.55 {\scriptsize (r=4)} & 141.02$\pm$5.81 {\scriptsize (r=4)} & 143.20$\pm$12.09 {\scriptsize (r=7)} \\
+data\_bigcode\_starcoder & 130.18$\pm$1.69 {\scriptsize (r=2)} & \cellcolor{red!15}\textbf{128.70$\pm$2.24 {\scriptsize (r=1)}} & 130.76$\pm$1.67 {\scriptsize (r=3)} & 132.10$\pm$2.02 {\scriptsize (r=4)} & \cellcolor{red!15}\textbf{130.76$\pm$1.67 {\scriptsize (r=1)}} & 162.89$\pm$3.46 {\scriptsize (r=5)} & 204.53$\pm$1.64 {\scriptsize (r=7)} & 157.19$\pm$2.09 {\scriptsize (r=6)} & 204.53$\pm$1.64 {\scriptsize (r=6)} & 223.99$\pm$20.13 {\scriptsize (r=8)} \\
+data\_bigscience\_mt0-xxl & 164.99$\pm$9.02 {\scriptsize (r=3)} & 161.63$\pm$10.40 {\scriptsize (r=3)} & 165.14$\pm$8.60 {\scriptsize (r=2)} & \cellcolor{red!15}\textbf{164.90$\pm$8.97 {\scriptsize (r=1)}} & 165.14$\pm$8.60 {\scriptsize (r=3)} & 175.07$\pm$12.78 {\scriptsize (r=4)} & 197.22$\pm$7.09 {\scriptsize (r=3)} & 158.12$\pm$7.44 {\scriptsize (r=5)} & 197.23$\pm$7.09 {\scriptsize (r=5)} & 221.40$\pm$12.62 {\scriptsize (r=6)} \\
+data\_google\_flan-t5-xl & \cellcolor{red!15}\textbf{85.30$\pm$1.10 {\scriptsize (r=1)}} & 84.63$\pm$1.95 {\scriptsize (r=4)} & 85.78$\pm$1.03 {\scriptsize (r=2)} & 85.86$\pm$1.02 {\scriptsize (r=3)} & 85.78$\pm$1.03 {\scriptsize (r=4)} & 111.05$\pm$3.07 {\scriptsize (r=5)} & 141.43$\pm$1.27 {\scriptsize (r=4)} & 108.01$\pm$1.43 {\scriptsize (r=6)} & 141.43$\pm$1.27 {\scriptsize (r=6)} & 154.28$\pm$11.11 {\scriptsize (r=7)} \\
+data\_google\_flan-t5-xxl & 83.67$\pm$1.26 {\scriptsize (r=3)} & 81.06$\pm$1.90 {\scriptsize (r=4)} & 83.40$\pm$1.44 {\scriptsize (r=2)} & \cellcolor{red!15}\textbf{82.94$\pm$1.44 {\scriptsize (r=1)}} & 83.40$\pm$1.44 {\scriptsize (r=4)} & 109.57$\pm$3.14 {\scriptsize (r=5)} & 135.52$\pm$1.48 {\scriptsize (r=4)} & 104.69$\pm$1.77 {\scriptsize (r=6)} & 135.52$\pm$1.48 {\scriptsize (r=6)} & 148.88$\pm$9.38 {\scriptsize (r=7)} \\
+data\_google\_flan-ul2 & \cellcolor{red!15}\textbf{78.21$\pm$1.88 {\scriptsize (r=1)}} & 77.75$\pm$2.27 {\scriptsize (r=2)} & 78.76$\pm$1.72 {\scriptsize (r=3)} & 80.39$\pm$1.68 {\scriptsize (r=4)} & 78.76$\pm$1.72 {\scriptsize (r=2)} & 99.26$\pm$2.93 {\scriptsize (r=5)} & 122.86$\pm$1.92 {\scriptsize (r=7)} & 94.12$\pm$1.89 {\scriptsize (r=6)} & 122.86$\pm$1.92 {\scriptsize (r=6)} & 134.09$\pm$8.14 {\scriptsize (r=8)} \\
+data\_ibm\_mpt-7b-instruct2 & 212.36$\pm$9.18 {\scriptsize (r=3)} & \cellcolor{red!15}\textbf{194.59$\pm$10.08 {\scriptsize (r=1)}} & 203.71$\pm$8.56 {\scriptsize (r=2)} & 195.49$\pm$7.56 {\scriptsize (r=2)} & \cellcolor{red!15}\textbf{203.71$\pm$8.56 {\scriptsize (r=1)}} & 224.07$\pm$14.67 {\scriptsize (r=4)} & 267.37$\pm$5.94 {\scriptsize (r=6)} & 208.75$\pm$8.01 {\scriptsize (r=5)} & 267.38$\pm$5.94 {\scriptsize (r=5)} & 295.46$\pm$32.77 {\scriptsize (r=7)} \\
+data\_llama-13b & \cellcolor{red!15}\textbf{133.82$\pm$2.04 {\scriptsize (r=1)}} & 131.03$\pm$2.73 {\scriptsize (r=4)} & 134.25$\pm$2.02 {\scriptsize (r=2)} & 134.49$\pm$2.45 {\scriptsize (r=3)} & 134.25$\pm$2.02 {\scriptsize (r=4)} & 167.92$\pm$4.95 {\scriptsize (r=5)} & 210.83$\pm$2.12 {\scriptsize (r=4)} & 161.90$\pm$2.10 {\scriptsize (r=6)} & 210.83$\pm$2.12 {\scriptsize (r=6)} & 230.64$\pm$13.30 {\scriptsize (r=7)} \\
+data\_llama-7b & 160.79$\pm$1.66 {\scriptsize (r=2)} & \cellcolor{red!15}\textbf{157.41$\pm$2.86 {\scriptsize (r=1)}} & 161.42$\pm$1.66 {\scriptsize (r=3)} & \cellcolor{red!15}\textbf{161.10$\pm$1.99 {\scriptsize (r=1)}} & 161.42$\pm$1.66 {\scriptsize (r=5)} & 205.88$\pm$4.04 {\scriptsize (r=4)} & 262.41$\pm$1.80 {\scriptsize (r=5)} & 200.24$\pm$2.10 {\scriptsize (r=6)} & 262.41$\pm$1.80 {\scriptsize (r=6)} & 282.58$\pm$14.90 {\scriptsize (r=7)} \\
+\bottomrule
+\end{tabular}
+\end{table}

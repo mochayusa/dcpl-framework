@@ -1,0 +1,11 @@
+per_model_file,dataset_index
+data_EleutherAI_gpt-neox-20b,0
+data_Salesforce_codegen2-16B,1
+data_bigcode_starcoder,2
+data_bigscience_mt0-xxl,3
+data_google_flan-t5-xl,4
+data_google_flan-t5-xxl,5
+data_google_flan-ul2,6
+data_ibm_mpt-7b-instruct2,7
+data_llama-13b,8
+data_llama-7b,9

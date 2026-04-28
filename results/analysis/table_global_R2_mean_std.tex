@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Dataset & lr & ridge & rf_light & nn & llm_pilot & DCPL \\
+\midrule
+Merged-All & 0.325$\pm$0.003 & 0.325$\pm$0.003 & 0.879$\pm$0.002 & \textbf{0.922$\pm$0.003} & 0.507$\pm$0.003 & 0.902$\pm$0.002 \\
+\bottomrule
+\end{tabular}
+
+\caption{Global throughput prediction on the merged dataset (80/20 split, 5 seeds). Higher is better.}
+\label{tab:global_r2_baseline_vs_dcpl}
+\end{table}

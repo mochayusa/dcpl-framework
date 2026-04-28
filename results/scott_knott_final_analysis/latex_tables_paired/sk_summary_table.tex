@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Summary of Scott--Knott results. For each method we report: (i) how many metrics yield rank $r=1$ (Scott--Knott best group), and (ii) how many metrics achieve the numerically best mean performance (ties allowed).}
+\label{tab:sk_summary}
+\begin{tabular}{c|cc|cc|cc|cc|cc|cc|cc|cc|cc|cc}
+\hline
+\multirow{2}{*}{System} & \multicolumn{2}{c|}{\textbf{baseline\_DaL}} & \multicolumn{2}{c|}{\textbf{baseline\_llm\_pilot}} & \multicolumn{2}{c|}{\textbf{baseline\_lr}} & \multicolumn{2}{c|}{\textbf{baseline\_nn}} & \multicolumn{2}{c|}{\textbf{baseline\_rf\_light}} & \multicolumn{2}{c|}{\textbf{baseline\_ridge}} & \multicolumn{2}{c|}{\textbf{dcpl\_gate\_lr}} & \multicolumn{2}{c|}{\textbf{dcpl\_gate\_nn}} & \multicolumn{2}{c|}{\textbf{dcpl\_gate\_rf}} & \multicolumn{2}{c|}{\textbf{dcpl\_gate\_ridge}} \\ \cline{2-21}
+  & \multicolumn{1}{c|}{$r=1$} & perf.=best & \multicolumn{1}{c|}{$r=1$} & perf.=best & \multicolumn{1}{c|}{$r=1$} & perf.=best & \multicolumn{1}{c|}{$r=1$} & perf.=best & \multicolumn{1}{c|}{$r=1$} & perf.=best & \multicolumn{1}{c|}{$r=1$} & perf.=best & \multicolumn{1}{c|}{$r=1$} & perf.=best & \multicolumn{1}{c|}{$r=1$} & perf.=best & \multicolumn{1}{c|}{$r=1$} & perf.=best & \multicolumn{1}{c|}{$r=1$} & perf.=best \\
+\hline
+data\_EleutherAI\_gpt-neox-20b & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 1 & 0  & 0 & 0  & 0 & 0  & 3 & 2  & 0 & 2  & 0 \\
+data\_Salesforce\_codegen2-16B & 0  & 0 & 0  & 3 & 0  & 0 & 1  & 0 & 1  & 1 & 1  & 0 & 0  & 0 & 1  & 0 & 0  & 0 & 2  & 0 \\
+data\_bigcode\_starcoder & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 0 & 1  & 1 & 0  & 0 & 2  & 0 & 1  & 3 & 0  & 0 & 1  & 0 \\
+data\_bigscience\_mt0-xxl & 0  & 0 & 1  & 3 & 0  & 0 & 1  & 0 & 1  & 1 & 0  & 0 & 0  & 0 & 0  & 0 & 1  & 0 & 1  & 0 \\
+data\_google\_flan-t5-xl & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 0 & 2  & 1 & 0  & 0 & 0  & 0 & 0  & 3 & 0  & 0 & 2  & 0 \\
+data\_google\_flan-t5-xxl & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 0 & 1  & 1 & 0  & 0 & 0  & 0 & 1  & 3 & 2  & 0 & 2  & 0 \\
+data\_google\_flan-ul2 & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 0 & 1  & 1 & 0  & 0 & 1  & 0 & 0  & 1 & 1  & 0 & 1  & 2 \\
+data\_ibm\_mpt-7b-instruct2 & 0  & 0 & 0  & 0 & 0  & 0 & 1  & 0 & 1  & 1 & 0  & 0 & 1  & 0 & 2  & 3 & 2  & 0 & 1  & 0 \\
+data\_llama-13b & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 0 & 2  & 1 & 0  & 0 & 1  & 0 & 0  & 3 & 0  & 0 & 1  & 0 \\
+data\_llama-7b & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 0 & 0  & 0 & 1  & 3 & 2  & 1 & 2  & 0 \\
+\hline
+\textbf{Total} & \textbf{0}  & \textbf{0} & \textbf{1}  & \textbf{6} & \textbf{0}  & \textbf{0} & \textbf{3}  & \textbf{0} & \textbf{10}  & \textbf{9} & \textbf{1}  & \textbf{0} & \textbf{5}  & \textbf{0} & \textbf{6}  & \textbf{22} & \textbf{10}  & \textbf{1} & \textbf{15}  & \textbf{2} \\
+\hline
+\end{tabular}
+\end{table}

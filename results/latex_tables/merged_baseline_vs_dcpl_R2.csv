@@ -1,0 +1,11 @@
+per_model_file,target,cv,llm_pilot,lr,nn,rf_light,ridge,dcpl_gate=ridge
+data_EleutherAI_gpt-neox-20b,Target_throughput_tokens_per_sec,split80_20,0.509,0.290,0.518,0.513,0.290,0.540$\pm$0.015
+data_Salesforce_codegen2-16B,Target_throughput_tokens_per_sec,split80_20,0.290,0.175,0.271,0.209,0.175,0.217$\pm$0.055
+data_bigcode_starcoder,Target_throughput_tokens_per_sec,split80_20,0.563,0.310,0.561,0.563,0.310,0.568$\pm$0.010
+data_bigscience_mt0-xxl,Target_throughput_tokens_per_sec,split80_20,0.386,0.165,0.203,0.361,0.165,0.352$\pm$0.032
+data_google_flan-t5-xl,Target_throughput_tokens_per_sec,split80_20,0.480,0.261,0.487,0.468,0.261,0.476$\pm$0.011
+data_google_flan-t5-xxl,Target_throughput_tokens_per_sec,split80_20,0.473,0.271,0.482,0.454,0.271,0.445$\pm$0.014
+data_google_flan-ul2,Target_throughput_tokens_per_sec,split80_20,0.488,0.275,0.492,0.466,0.275,0.454$\pm$0.020
+data_ibm_mpt-7b-instruct2,Target_throughput_tokens_per_sec,split80_20,0.317,0.191,0.270,0.296,0.191,0.331$\pm$0.045
+data_llama-13b,Target_throughput_tokens_per_sec,split80_20,0.540,0.304,0.543,0.537,0.304,0.537$\pm$0.010
+data_llama-7b,Target_throughput_tokens_per_sec,split80_20,0.531,0.288,0.538,0.530,0.288,0.529$\pm$0.009

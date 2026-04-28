@@ -1,0 +1,20 @@
+\begin{table}
+\caption{MRE standard deviation across 5 splits (baseline learners vs. DCPL).}
+\label{tab:mre_std_baseline_vs_dcpl}
+\begin{tabular}{lrrrrrr}
+\toprule
+dataset & lr & ridge & rf\_light & nn & llm\_pilot & dcpl \\
+\midrule
+EleutherAI\_gpt-neox-20b & 32.13 & 32.13 & 0.53 & 12.01 & 9.42 & 3.83 \\
+Salesforce\_codegen2-16B & 125.41 & 125.35 & 3.29 & 48.06 & 15.60 & 25.48 \\
+bigcode\_starcoder & 10.67 & 10.67 & 0.28 & 5.13 & 1.20 & 1.01 \\
+bigscience\_mt0-xxl & 37.87 & 37.86 & 1.35 & 4.62 & 26.70 & 3.49 \\
+google\_flan-t5-xl & 9.18 & 9.18 & 0.91 & 9.59 & 4.94 & 1.93 \\
+google\_flan-t5-xxl & 36.26 & 36.26 & 0.78 & 14.85 & 9.88 & 1.73 \\
+google\_flan-ul2 & 20.81 & 20.81 & 0.93 & 6.21 & 7.57 & 5.56 \\
+ibm\_mpt-7b-instruct2 & 96.23 & 96.22 & 2.28 & 15.23 & 47.31 & 6.73 \\
+llama-13b & 6.60 & 6.60 & 0.51 & 4.12 & 4.65 & 1.84 \\
+llama-7b & 4.98 & 4.98 & 0.35 & 4.42 & 2.33 & 0.62 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\small
+\caption{How many LLMs each algorithm ranked best (Rank=1) per metric. Maximum per metric is highlighted.}
+\label{tab:sk_rank1_counts}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{lcccc}
+\toprule
+Algorithm & R2 & MAE & RMSE & MRE \\
+\midrule
+dcpl\_gate\_ridge & \cellcolor{red!15}\textbf{8} & 0 & \cellcolor{red!15}\textbf{7} & 0 \\
+baseline\_rf\_light & 0 & 3 & 0 & \cellcolor{red!15}\textbf{7} \\
+dcpl\_gate\_rf & 1 & \cellcolor{red!15}\textbf{4} & 2 & 3 \\
+dcpl\_gate\_nn & 1 & \cellcolor{red!15}\textbf{4} & 1 & 0 \\
+dcpl\_gate\_lr & 0 & 2 & 3 & 0 \\
+baseline\_nn & 0 & 0 & 0 & 3 \\
+baseline\_llm\_pilot & 1 & 0 & 0 & 0 \\
+baseline\_ridge & 0 & 0 & 0 & 1 \\
+baseline\_DaL & 0 & 0 & 0 & 0 \\
+baseline\_lr & 0 & 0 & 0 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,43 @@
+{
+  "input": "data/llm_pilot_data/preliminary/preliminary_sample_100k.csv",
+  "target_col": "Target_throughput_tokens_per_sec",
+  "model_size_bins": 4,
+  "sequence_bins": 5,
+  "concurrency_bins": 4,
+  "ai_nonai": {
+    "rows_used": 100000,
+    "gpu_col": "NonAI_gpu_type",
+    "model_size_bins": 4,
+    "outputs": {
+      "heatmap": "results/preliminary/qualitative_interactions/ai_nonai/figures/ai_nonai_heatmap.png",
+      "boxplot": "results/preliminary/qualitative_interactions/ai_nonai/figures/ai_nonai_boxplot.png",
+      "table_csv": "results/preliminary/qualitative_interactions/ai_nonai/tables/ai_nonai_median_throughput.csv",
+      "table_tex": "results/preliminary/qualitative_interactions/ai_nonai/tables/ai_nonai_median_throughput.tex"
+    }
+  },
+  "ai_workload": {
+    "rows_used": 100000,
+    "model_size_bins": 4,
+    "sequence_length_bins": 5,
+    "outputs": {
+      "heatmap": "results/preliminary/qualitative_interactions/ai_workload/figures/ai_workload_heatmap.png",
+      "trend": "results/preliminary/qualitative_interactions/ai_workload/figures/ai_workload_trends.png",
+      "table_csv": "results/preliminary/qualitative_interactions/ai_workload/tables/ai_workload_median_throughput.csv",
+      "table_tex": "results/preliminary/qualitative_interactions/ai_workload/tables/ai_workload_median_throughput.tex"
+    }
+  },
+  "nonai_workload": {
+    "rows_used": 100000,
+    "gpu_col": "NonAI_gpu_type",
+    "sequence_length_bins": 5,
+    "concurrency_bins": 4,
+    "outputs": {
+      "seq_heatmap": "results/preliminary/qualitative_interactions/nonai_workload/figures/nonai_workload_seq_heatmap.png",
+      "conc_heatmap": "results/preliminary/qualitative_interactions/nonai_workload/figures/nonai_workload_conc_heatmap.png",
+      "seq_table_csv": "results/preliminary/qualitative_interactions/nonai_workload/tables/nonai_workload_seq_median_throughput.csv",
+      "seq_table_tex": "results/preliminary/qualitative_interactions/nonai_workload/tables/nonai_workload_seq_median_throughput.tex",
+      "conc_table_csv": "results/preliminary/qualitative_interactions/nonai_workload/tables/nonai_workload_conc_median_throughput.csv",
+      "conc_table_tex": "results/preliminary/qualitative_interactions/nonai_workload/tables/nonai_workload_conc_median_throughput.tex"
+    }
+  }
+}

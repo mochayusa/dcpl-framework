@@ -1,0 +1,108 @@
+% ================================
+% LLM: data_ibm_mpt-7b-instruct2
+% ================================
+\section*{LLM: data\_ibm\_mpt-7b-instruct2}
+
+\subsubsection*{Metric: R2}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_ibm\_mpt-7b-instruct2 on R2 (Mean$\pm$Std over runs).}
+\label{tab:sk_data_ibm_mpt-7b-instruct2_R2}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_nn & \textbf{1} & \textbf{0.468$\pm$0.041} & 0.071 & 30 \\
+\rowcolor{red!15} dcpl\_gate\_rf & \textbf{1} & \textbf{0.458$\pm$0.041} & 0.040 & 30 \\
+dcpl\_gate\_ridge & 2 & 0.440$\pm$0.039 & 0.055 & 30 \\
+dcpl\_gate\_lr & 3 & 0.440$\pm$0.039 & 0.055 & 30 \\
+baseline\_llm\_pilot & 4 & 0.440$\pm$0.039 & 0.061 & 30 \\
+baseline\_nn & 5 & 0.401$\pm$0.052 & 0.054 & 30 \\
+baseline\_rf\_light & 5 & 0.323$\pm$0.079 & 0.078 & 30 \\
+baseline\_lr & 5 & 0.283$\pm$0.019 & 0.022 & 30 \\
+baseline\_ridge & 6 & 0.283$\pm$0.019 & 0.022 & 30 \\
+baseline\_DaL & 7 & 0.109$\pm$0.045 & 0.047 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: MAE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_ibm\_mpt-7b-instruct2 on MAE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_ibm_mpt-7b-instruct2_MAE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_nn & \textbf{1} & \textbf{194.588$\pm$10.080} & 12.226 & 30 \\
+\rowcolor{red!15} dcpl\_gate\_lr & \textbf{1} & \textbf{203.707$\pm$8.559} & 14.703 & 30 \\
+dcpl\_gate\_rf & 2 & 195.493$\pm$7.562 & 11.159 & 30 \\
+dcpl\_gate\_ridge & 2 & 203.707$\pm$8.559 & 14.703 & 30 \\
+baseline\_rf\_light & 3 & 212.360$\pm$9.182 & 14.368 & 30 \\
+baseline\_nn & 4 & 224.068$\pm$14.670 & 14.991 & 30 \\
+baseline\_llm\_pilot & 5 & 208.752$\pm$8.010 & 10.744 & 30 \\
+baseline\_lr & 5 & 267.377$\pm$5.939 & 8.785 & 30 \\
+baseline\_ridge & 6 & 267.370$\pm$5.939 & 8.785 & 30 \\
+baseline\_DaL & 7 & 295.459$\pm$32.766 & 56.667 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: RMSE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_ibm\_mpt-7b-instruct2 on RMSE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_ibm_mpt-7b-instruct2_RMSE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_rf & \textbf{1} & \textbf{561.903$\pm$37.503} & 43.167 & 30 \\
+\rowcolor{red!15} dcpl\_gate\_ridge & \textbf{1} & \textbf{571.224$\pm$36.444} & 49.900 & 30 \\
+baseline\_nn & 2 & 591.170$\pm$46.348 & 75.911 & 30 \\
+dcpl\_gate\_nn & 3 & 556.528$\pm$35.905 & 49.026 & 30 \\
+dcpl\_gate\_lr & 3 & 571.224$\pm$36.444 & 49.900 & 30 \\
+baseline\_ridge & 3 & 646.683$\pm$38.355 & 67.496 & 30 \\
+baseline\_llm\_pilot & 4 & 571.363$\pm$37.455 & 50.907 & 30 \\
+baseline\_lr & 4 & 646.683$\pm$38.354 & 67.492 & 30 \\
+baseline\_rf\_light & 5 & 626.969$\pm$43.668 & 66.049 & 30 \\
+baseline\_DaL & 6 & 734.739$\pm$14.371 & 16.448 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: MRE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_ibm\_mpt-7b-instruct2 on MRE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_ibm_mpt-7b-instruct2_MRE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} baseline\_rf\_light & \textbf{1} & \textbf{250.172$\pm$8.541} & 7.631 & 30 \\
+\rowcolor{red!15} baseline\_nn & \textbf{1} & \textbf{298.884$\pm$83.718} & 31.476 & 30 \\
+dcpl\_gate\_rf & 2 & 298.697$\pm$15.725 & 21.739 & 30 \\
+dcpl\_gate\_nn & 2 & 322.867$\pm$65.470 & 79.047 & 30 \\
+dcpl\_gate\_lr & 3 & 476.888$\pm$36.178 & 31.180 & 30 \\
+dcpl\_gate\_ridge & 4 & 476.890$\pm$36.172 & 31.176 & 30 \\
+baseline\_llm\_pilot & 5 & 350.837$\pm$22.649 & 35.176 & 30 \\
+baseline\_lr & 5 & 707.747$\pm$33.346 & 51.482 & 30 \\
+baseline\_ridge & 6 & 707.632$\pm$33.341 & 51.473 & 30 \\
+baseline\_DaL & 7 & 1119.096$\pm$442.281 & 804.505 & 30 \\
+\hline
+\end{tabular}
+\end{table}

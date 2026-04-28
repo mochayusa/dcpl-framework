@@ -1,0 +1,20 @@
+\begin{table}
+\caption{R\textsuperscript{2} mean across 5 splits (baseline learners vs. DCPL).}
+\label{tab:r2_mean_baseline_vs_dcpl}
+\begin{tabular}{lrrrrrr}
+\toprule
+dataset & lr & ridge & rf\_light & nn & llm\_pilot & dcpl \\
+\midrule
+EleutherAI\_gpt-neox-20b & 0.35 & 0.35 & 0.92 & 0.91 & 0.53 & 0.93 \\
+Salesforce\_codegen2-16B & 0.22 & 0.22 & 0.85 & 0.70 & 0.26 & 0.88 \\
+bigcode\_starcoder & 0.36 & 0.36 & 0.92 & 0.91 & 0.57 & 0.93 \\
+bigscience\_mt0-xxl & 0.28 & 0.28 & 0.91 & 0.83 & 0.37 & 0.93 \\
+google\_flan-t5-xl & 0.32 & 0.32 & 0.91 & 0.92 & 0.49 & 0.93 \\
+google\_flan-t5-xxl & 0.32 & 0.32 & 0.91 & 0.89 & 0.45 & 0.93 \\
+google\_flan-ul2 & 0.33 & 0.33 & 0.91 & 0.92 & 0.45 & 0.94 \\
+ibm\_mpt-7b-instruct2 & 0.27 & 0.27 & 0.92 & 0.88 & 0.33 & 0.93 \\
+llama-13b & 0.35 & 0.35 & 0.92 & 0.92 & 0.54 & 0.93 \\
+llama-7b & 0.34 & 0.34 & 0.92 & 0.92 & 0.52 & 0.93 \\
+\bottomrule
+\end{tabular}
+\end{table}

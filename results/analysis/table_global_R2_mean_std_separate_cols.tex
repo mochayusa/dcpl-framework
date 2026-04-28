@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Dataset} & \textbf{Best Baseline} & \multicolumn{4}{c}{\textbf{R$^2$}} \\
+\cmidrule(lr){3-6}
+ &  & \multicolumn{2}{c}{Baseline} & \multicolumn{2}{c}{DCPL} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6}
+ &  & mean & std & mean & std \\
+\midrule
+Merged-All & nn & 0.922 & 0.003 & 0.902 & 0.002 \\
+\bottomrule
+\end{tabular}
+\caption{Global throughput prediction performance on the merged dataset (80/20 split, 5 runs). Higher is better.}
+\label{tab:global_r2_baseline_vs_dcpl}
+\end{table}

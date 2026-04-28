@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{llrrrrr}
+\toprule
+\textbf{Group} & \textbf{Learner} & \textbf{Runs} &
+\textbf{R$^2$ Mean} & \textbf{R$^2$ Std} &
+\textbf{MRE Mean} & \textbf{MRE Std} \\
+\midrule
+Baseline & llm\_pilot & 5 & 0.507 & 0.003 & 281.775 & 7.156 \\
+Baseline & lr         & 5 & 0.325 & 0.003 & 688.145 & 8.857 \\
+Baseline & nn         & 5 & 0.922 & 0.003 & 75.919  & 5.561 \\
+Baseline & rf\_light  & 5 & 0.879 & 0.002 & 79.922  & 0.473 \\
+Baseline & ridge      & 5 & 0.325 & 0.003 & 688.144 & 8.857 \\
+\midrule
+DCPL     & DCPL       & 5 & 0.902 & 0.002 & 118.477 & 0.661 \\
+\bottomrule
+\end{tabular}
+\caption{Global throughput prediction performance (80/20 split, 5 runs).
+Higher R$^2$ is better; lower MRE is better.}
+\label{tab:global_baseline_vs_dcpl_mean_std}
+\end{table}

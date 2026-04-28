@@ -1,0 +1,4 @@
+data_path: data/processed/historical_performance_data_label_numeric.csv
+results_root: results/runs
+targets: [throughput, median_nttft, median_itl]
+cv_mode: logo_model

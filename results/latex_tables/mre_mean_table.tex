@@ -1,0 +1,20 @@
+\begin{table}
+\caption{MRE mean across 5 splits (baseline learners vs. DCPL).}
+\label{tab:mre_mean_baseline_vs_dcpl}
+\begin{tabular}{lrrrrrr}
+\toprule
+dataset & lr & ridge & rf\_light & nn & llm\_pilot & dcpl \\
+\midrule
+EleutherAI\_gpt-neox-20b & 643.87 & 643.85 & 39.43 & 54.29 & 216.16 & 58.94 \\
+Salesforce\_codegen2-16B & 1388.72 & 1388.37 & 84.86 & 186.25 & 1026.86 & 171.62 \\
+bigcode\_starcoder & 372.74 & 372.73 & 33.58 & 47.03 & 143.16 & 32.03 \\
+bigscience\_mt0-xxl & 590.42 & 590.32 & 55.68 & 68.89 & 420.01 & 59.81 \\
+google\_flan-t5-xl & 638.32 & 638.31 & 50.98 & 65.77 & 308.39 & 49.71 \\
+google\_flan-t5-xxl & 774.08 & 774.06 & 52.44 & 70.76 & 380.67 & 58.19 \\
+google\_flan-ul2 & 591.35 & 591.33 & 39.62 & 54.69 & 280.76 & 47.57 \\
+ibm\_mpt-7b-instruct2 & 1628.22 & 1628.05 & 53.18 & 116.64 & 958.60 & 126.44 \\
+llama-13b & 496.90 & 496.89 & 35.97 & 38.97 & 196.55 & 38.62 \\
+llama-7b & 433.48 & 433.48 & 35.94 & 48.86 & 176.61 & 29.84 \\
+\bottomrule
+\end{tabular}
+\end{table}

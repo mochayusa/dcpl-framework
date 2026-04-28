@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Ablation study across per-LLM datasets over 30 repeated holdout runs. Lower RMSE is better. Best mean RMSE per row is highlighted.}
+\label{tab:ablation_rmse}
+\begin{tabular}{lcccc}
+\toprule
+Model & M1 & M2a & M2b & M3 \\
+\midrule
+EleutherAI\_gpt-neox-20b & 379.102$\pm$11.495 & 379.107$\pm$11.498 & 378.957$\pm$11.037 & \textbf{372.678$\pm$11.433} \\
+Salesforce\_codegen2-16B & 328.191$\pm$38.582 & 328.686$\pm$38.749 & \textbf{327.534$\pm$39.079} & 327.643$\pm$39.435 \\
+bigcode\_starcoder & 389.426$\pm$10.887 & 389.430$\pm$10.885 & 389.217$\pm$11.091 & \textbf{374.713$\pm$11.000} \\
+bigscience\_mt0-xxl & 413.059$\pm$39.617 & 413.099$\pm$39.639 & 413.429$\pm$39.361 & \textbf{410.579$\pm$39.927} \\
+google\_flan-t5-xl & 260.790$\pm$8.435 & 260.792$\pm$8.436 & 260.777$\pm$8.610 & \textbf{254.085$\pm$8.293} \\
+google\_flan-t5-xxl & 247.835$\pm$11.670 & 247.836$\pm$11.669 & 247.800$\pm$11.823 & \textbf{241.786$\pm$10.454} \\
+google\_flan-ul2 & 224.993$\pm$14.890 & 224.996$\pm$14.893 & \textbf{224.851$\pm$15.284} & 224.904$\pm$15.736 \\
+ibm\_mpt-7b-instruct2 & 572.055$\pm$37.042 & \textbf{572.034$\pm$37.041} & 572.407$\pm$36.654 & 572.983$\pm$36.864 \\
+llama-13b & 401.441$\pm$15.577 & 401.446$\pm$15.576 & 401.310$\pm$15.403 & \textbf{388.690$\pm$13.678} \\
+llama-7b & 496.109$\pm$10.779 & 496.115$\pm$10.777 & 495.899$\pm$10.719 & \textbf{472.120$\pm$9.571} \\
+\bottomrule
+\end{tabular}
+\end{table}

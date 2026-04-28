@@ -1,0 +1,108 @@
+% ================================
+% LLM: data_EleutherAI_gpt-neox-20b
+% ================================
+\section*{LLM: data\_EleutherAI\_gpt-neox-20b}
+
+\subsubsection*{Metric: R2}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_EleutherAI\_gpt-neox-20b on R2 (Mean$\pm$Std over runs).}
+\label{tab:sk_data_EleutherAI_gpt-neox-20b_R2}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_ridge & \textbf{1} & \textbf{0.599$\pm$0.022} & 0.031 & 30 \\
+dcpl\_gate\_lr & 2 & 0.599$\pm$0.022 & 0.031 & 30 \\
+dcpl\_gate\_nn & 3 & 0.606$\pm$0.021 & 0.029 & 30 \\
+dcpl\_gate\_rf & 3 & 0.574$\pm$0.025 & 0.039 & 30 \\
+baseline\_rf\_light & 4 & 0.581$\pm$0.029 & 0.033 & 30 \\
+baseline\_nn & 5 & 0.438$\pm$0.021 & 0.026 & 30 \\
+baseline\_llm\_pilot & 6 & 0.477$\pm$0.020 & 0.030 & 30 \\
+baseline\_lr & 6 & 0.311$\pm$0.008 & 0.012 & 30 \\
+baseline\_ridge & 7 & 0.311$\pm$0.008 & 0.012 & 30 \\
+baseline\_DaL & 8 & 0.174$\pm$0.053 & 0.026 & 28 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: MAE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_EleutherAI\_gpt-neox-20b on MAE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_EleutherAI_gpt-neox-20b_MAE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_rf & \textbf{1} & \textbf{129.373$\pm$1.527} & 2.242 & 30 \\
+baseline\_rf\_light & 2 & 130.121$\pm$1.596 & 1.887 & 30 \\
+dcpl\_gate\_ridge & 3 & 130.152$\pm$1.692 & 2.513 & 30 \\
+dcpl\_gate\_nn & 4 & 126.704$\pm$2.233 & 3.031 & 30 \\
+dcpl\_gate\_lr & 4 & 130.152$\pm$1.692 & 2.513 & 30 \\
+baseline\_ridge & 4 & 196.365$\pm$2.113 & 3.606 & 30 \\
+baseline\_nn & 5 & 158.773$\pm$3.763 & 4.813 & 30 \\
+baseline\_llm\_pilot & 6 & 152.597$\pm$2.173 & 3.078 & 30 \\
+baseline\_lr & 6 & 196.366$\pm$2.113 & 3.606 & 30 \\
+baseline\_DaL & 7 & 211.050$\pm$12.070 & 15.446 & 28 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: RMSE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_EleutherAI\_gpt-neox-20b on RMSE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_EleutherAI_gpt-neox-20b_RMSE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_ridge & \textbf{1} & \textbf{372.650$\pm$11.251} & 15.009 & 30 \\
+dcpl\_gate\_lr & 2 & 372.650$\pm$11.251 & 15.009 & 30 \\
+dcpl\_gate\_nn & 3 & 369.425$\pm$10.873 & 13.618 & 30 \\
+dcpl\_gate\_rf & 3 & 384.145$\pm$9.281 & 7.894 & 30 \\
+baseline\_rf\_light & 4 & 380.888$\pm$11.849 & 12.554 & 30 \\
+baseline\_nn & 5 & 441.441$\pm$14.260 & 19.750 & 30 \\
+baseline\_llm\_pilot & 6 & 425.733$\pm$13.196 & 18.707 & 30 \\
+baseline\_lr & 6 & 488.847$\pm$13.214 & 17.514 & 30 \\
+baseline\_ridge & 7 & 488.847$\pm$13.214 & 17.514 & 30 \\
+baseline\_DaL & 8 & 536.474$\pm$16.441 & 8.554 & 28 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: MRE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_EleutherAI\_gpt-neox-20b on MRE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_EleutherAI_gpt-neox-20b_MRE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_rf & \textbf{1} & \textbf{123.255$\pm$2.593} & 3.897 & 30 \\
+dcpl\_gate\_nn & 2 & 138.375$\pm$16.986 & 28.486 & 30 \\
+baseline\_nn & 3 & 153.495$\pm$16.117 & 19.007 & 30 \\
+dcpl\_gate\_lr & 4 & 176.327$\pm$8.013 & 7.991 & 30 \\
+dcpl\_gate\_ridge & 5 & 176.327$\pm$8.012 & 7.990 & 30 \\
+baseline\_rf\_light & 6 & 122.671$\pm$2.758 & 4.184 & 30 \\
+baseline\_ridge & 6 & 399.157$\pm$13.699 & 16.223 & 30 \\
+baseline\_llm\_pilot & 7 & 195.359$\pm$13.205 & 16.391 & 30 \\
+baseline\_lr & 7 & 399.165$\pm$13.699 & 16.224 & 30 \\
+baseline\_DaL & 8 & 511.423$\pm$73.480 & 121.652 & 28 \\
+\hline
+\end{tabular}
+\end{table}

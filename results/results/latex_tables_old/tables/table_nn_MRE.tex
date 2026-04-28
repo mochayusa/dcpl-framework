@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Baseline vs DICE (learner=nn) on MRE (mean over runs). $\Delta$ = DICE - Baseline.}
+\label{tab:baseline-vs-dice-nn-MRE}
+\begin{tabular}{lrrrr}
+\toprule
+Dataset & Baseline & DICE & $\Delta$ & $\%\Delta$ \\
+\midrule
+ibm\_mpt-7b-instruct2 & 1151.917 & 1018.537 & -133.380 & -11.58\% \\
+bigscience\_mt0-xxl & 476.693 & 420.330 & -56.362 & -11.82\% \\
+google\_flan-t5-xxl & 387.928 & 360.277 & -27.651 & -7.13\% \\
+EleutherAI\_gpt-neox-20b & 208.858 & 184.132 & -24.725 & -11.84\% \\
+llama-13b & 189.770 & 173.758 & -16.012 & -8.44\% \\
+llama-7b & 169.382 & 155.569 & -13.813 & -8.15\% \\
+bigcode\_starcoder & 139.542 & 126.511 & -13.031 & -9.34\% \\
+google\_flan-t5-xl & 304.543 & 293.103 & -11.440 & -3.76\% \\
+google\_flan-ul2 & 281.491 & 271.146 & -10.345 & -3.68\% \\
+Salesforce\_codegen2-16B & 1236.420 & 1256.876 & 20.456 & 1.65\% \\
+\bottomrule
+\end{tabular}
+\end{table}

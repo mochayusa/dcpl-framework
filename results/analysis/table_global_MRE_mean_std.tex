@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Dataset & lr & ridge & rf_light & nn & llm_pilot & DCPL \\
+\midrule
+Merged-All & 688.1$\pm$8.9 & 688.1$\pm$8.9 & 79.9$\pm$0.5 & \textbf{75.9$\pm$5.6} & 281.8$\pm$7.2 & 118.5$\pm$0.7 \\
+\bottomrule
+\end{tabular}
+
+\caption{Global throughput prediction on the merged dataset (80/20 split, 5 seeds). Lower is better.}
+\label{tab:global_mre_baseline_vs_dcpl}
+\end{table}

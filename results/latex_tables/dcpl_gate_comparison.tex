@@ -1,0 +1,33 @@
+
+\begin{table}[t]
+\centering
+\caption{DCPL gate comparison (mean $\pm$ std over 30 runs, split 80/20).}
+\label{tab:dcpl_gate_comparison}
+\small
+\begin{tabular}{l l c c c c}
+\toprule
+Dataset & Gate & R2 mean & R2 std & MRE mean & MRE std \\
+\midrule
+data\_EleutherAI\_gpt-neox-20b & Ridge & 0.5405 & 0.0152 & 154.74 & 2.98 \\
+data\_Salesforce\_codegen2-16B & Ridge & 0.2174 & 0.0553 & 1194.18 & 217.28 \\
+data\_bigcode\_starcoder & Ridge & 0.5683 & 0.0095 & 110.34 & 1.39 \\
+data\_bigscience\_mt0-xxl & Ridge & 0.3522 & 0.0315 & 408.13 & 24.30 \\
+data\_google\_flan-t5-xl & Ridge & 0.4765 & 0.0111 & 250.89 & 4.19 \\
+data\_google\_flan-t5-xxl & Ridge & 0.4453 & 0.0140 & 307.63 & 7.19 \\
+data\_google\_flan-ul2 & Ridge & 0.4538 & 0.0201 & 248.40 & 7.50 \\
+data\_ibm\_mpt-7b-instruct2 & Ridge & 0.3315 & 0.0445 & 910.83 & 52.65 \\
+data\_llama-13b & Ridge & 0.5374 & 0.0103 & 151.06 & 2.58 \\
+data\_llama-7b & Ridge & 0.5290 & 0.0091 & 143.87 & 2.09 \\
+data\_EleutherAI\_gpt-neox-20b & Neural Network & 0.5409 & 0.0156 & 169.00 & 16.17 \\
+data\_Salesforce\_codegen2-16B & Neural Network & 0.2242 & 0.0458 & 1101.09 & 133.08 \\
+data\_bigcode\_starcoder & Neural Network & 0.5693 & 0.0099 & 115.28 & 11.50 \\
+data\_bigscience\_mt0-xxl & Neural Network & 0.3455 & 0.0414 & 424.08 & 46.49 \\
+data\_google\_flan-t5-xl & Neural Network & 0.4853 & 0.0134 & 259.03 & 22.10 \\
+data\_google\_flan-t5-xxl & Neural Network & 0.4544 & 0.0200 & 324.81 & 27.19 \\
+data\_google\_flan-ul2 & Neural Network & 0.4577 & 0.0243 & 265.80 & 30.69 \\
+data\_ibm\_mpt-7b-instruct2 & Neural Network & 0.3300 & 0.0480 & 950.04 & 103.05 \\
+data\_llama-13b & Neural Network & 0.5401 & 0.0111 & 160.51 & 13.04 \\
+data\_llama-7b & Neural Network & 0.5307 & 0.0093 & 150.16 & 13.09 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,61 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Selisih (\textit{delta}) DCPL terhadap setiap baseline/existing study. Definisi: untuk R2, $\Delta=\text{DCPL}-\text{baseline}$; untuk MAE/RMSE/MRE, $\Delta=\text{baseline}-\text{DCPL}$. Dengan demikian $\Delta>0$ berarti DCPL lebih baik. Nilai $\Delta$ terbesar per dataset--metric dicetak tebal.}
+\label{tab:delta_dcpl_vs_all}
+\begin{tabular}{llcccccc}
+\toprule
+Dataset & Metric & DaL & LLM\_Pilot & lr & nn & rf\_light & ridge \\
+\midrule
+EleutherAI\_gpt-neox-20b & MAE & \textbf{73.6261} & 25.8920 & 69.6619 & 32.0683 & 3.4166 & 69.6606 \\
+EleutherAI\_gpt-neox-20b & MRE & \textbf{297.0506} & 56.9838 & 260.7899 & 15.1199 & -15.7044 & 260.7820 \\
+EleutherAI\_gpt-neox-20b & R2 & \textbf{0.3849} & 0.1288 & 0.2949 & 0.1680 & 0.0252 & 0.2949 \\
+EleutherAI\_gpt-neox-20b & RMSE & \textbf{145.2104} & 56.3080 & 119.4226 & 72.0169 & 11.4638 & 119.4226 \\
+\addlinespace
+Salesforce\_codegen2-16B & MAE & \textbf{35.8718} & -7.7028 & 17.2209 & 1.3599 & -2.0350 & 17.2069 \\
+Salesforce\_codegen2-16B & MRE & \textbf{587.5284} & -173.6798 & -9.3530 & -162.0734 & -271.4389 & -9.6891 \\
+Salesforce\_codegen2-16B & R2 & \textbf{0.2241} & -0.0630 & 0.0604 & -0.0066 & 0.0105 & 0.0604 \\
+Salesforce\_codegen2-16B & RMSE & \textbf{61.5524} & -15.9577 & 14.9150 & -2.0386 & 0.4316 & 14.9138 \\
+\addlinespace
+bigcode\_starcoder & MAE & \textbf{85.8689} & 28.4967 & 75.8342 & 34.1972 & 1.4812 & 75.8333 \\
+bigcode\_starcoder & MRE & \textbf{206.8514} & 39.9734 & 148.1779 & 18.9919 & -5.4639 & 148.1750 \\
+bigcode\_starcoder & R2 & \textbf{0.4151} & 0.1453 & 0.3171 & 0.1818 & 0.0126 & 0.3171 \\
+bigcode\_starcoder & RMSE & \textbf{174.0901} & 67.9799 & 136.9165 & 83.4731 & 6.3257 & 136.9165 \\
+\addlinespace
+bigscience\_mt0-xxl & MAE & \textbf{63.8500} & -3.5145 & 35.6013 & 13.4374 & 3.3595 & 35.5929 \\
+bigscience\_mt0-xxl & MRE & \textbf{365.8142} & -19.5692 & 52.4083 & -4.9447 & -47.7219 & 52.3599 \\
+bigscience\_mt0-xxl & R2 & \textbf{0.2716} & -0.0424 & 0.1225 & 0.0195 & 0.0651 & 0.1225 \\
+bigscience\_mt0-xxl & RMSE & \textbf{84.1889} & -15.0301 & 40.2232 & 6.2110 & 20.5469 & 40.2227 \\
+\addlinespace
+google\_flan-t5-xl & MAE & 53.1696 & 23.3828 & \textbf{56.8025} & 26.4194 & 0.6760 & 56.8019 \\
+google\_flan-t5-xl & MRE & 243.1307 & 65.3727 & \textbf{251.9283} & 17.7385 & -10.0782 & 251.9217 \\
+google\_flan-t5-xl & R2 & \textbf{0.4436} & 0.1669 & 0.3711 & 0.2085 & 0.0150 & 0.3711 \\
+google\_flan-t5-xl & RMSE & \textbf{134.8899} & 56.2865 & 113.7469 & 68.8145 & 5.4384 & 113.7469 \\
+\addlinespace
+google\_flan-t5-xxl & MAE & 48.3288 & 23.6303 & \textbf{54.4584} & 28.5064 & 2.6046 & 54.4573 \\
+google\_flan-t5-xxl & MRE & 194.3928 & 75.4860 & \textbf{290.2793} & 34.3017 & -2.6467 & 290.2655 \\
+google\_flan-t5-xxl & R2 & \textbf{0.4420} & 0.1621 & 0.3629 & 0.2174 & 0.0207 & 0.3629 \\
+google\_flan-t5-xxl & RMSE & \textbf{117.6573} & 51.2899 & 104.5810 & 66.8712 & 6.8193 & 104.5811 \\
+\addlinespace
+google\_flan-ul2 & MAE & 35.6337 & 16.3764 & \textbf{45.1170} & 21.5147 & 0.4606 & 45.1151 \\
+google\_flan-ul2 & MRE & 116.7983 & 48.2049 & \textbf{192.9275} & 10.0103 & -15.9243 & 192.9098 \\
+google\_flan-ul2 & R2 & \textbf{0.3877} & 0.1313 & 0.3370 & 0.1989 & 0.0198 & 0.3370 \\
+google\_flan-ul2 & RMSE & \textbf{103.8286} & 37.8106 & 88.0766 & 55.3708 & 5.5514 & 88.0765 \\
+\addlinespace
+ibm\_mpt-7b-instruct2 & MAE & \textbf{116.4184} & 14.1632 & 72.7888 & 29.4802 & 17.7713 & 72.7813 \\
+ibm\_mpt-7b-instruct2 & MRE & \textbf{1053.6792} & 27.9694 & 384.8801 & -23.9829 & -72.6954 & 384.7644 \\
+ibm\_mpt-7b-instruct2 & R2 & \textbf{0.3223} & 0.0284 & 0.1848 & 0.0674 & 0.1453 & 0.1848 \\
+ibm\_mpt-7b-instruct2 & RMSE & \textbf{169.3966} & 14.8355 & 90.1551 & 34.6425 & 70.4413 & 90.1548 \\
+\addlinespace
+llama-13b & MAE & 50.0648 & 30.8624 & \textbf{79.7996} & 36.8829 & 2.7853 & 79.7985 \\
+llama-13b & MRE & 62.5470 & 49.1614 & \textbf{189.9434} & 21.6683 & -5.1479 & 189.9388 \\
+llama-13b & R2 & 0.2920 & 0.1504 & 0.3203 & 0.1839 & 0.0154 & \textbf{0.3203} \\
+llama-13b & RMSE & 120.7118 & 72.7919 & 143.2959 & 87.5559 & 7.9010 & \textbf{143.2959} \\
+\addlinespace
+llama-7b & MAE & 73.1119 & 42.8285 & \textbf{105.0037} & 48.4743 & 3.3837 & 105.0027 \\
+llama-7b & MRE & 68.1168 & 49.4095 & \textbf{167.0585} & 25.0952 & -1.7408 & 167.0557 \\
+llama-7b & R2 & 0.3386 & 0.1791 & \textbf{0.3522} & 0.2091 & 0.0152 & 0.3522 \\
+llama-7b & RMSE & \textbf{200.2475} & 110.2233 & 199.8180 & 126.6982 & 10.1432 & 199.8180 \\
+\bottomrule
+\end{tabular}
+\end{table}

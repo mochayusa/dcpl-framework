@@ -1,0 +1,42 @@
+\begin{table}[t]
+\centering
+\small
+\caption{DCPL gate comparison using mean over runs. Best per dataset is bold (R2: higher is better; MRE: lower is better).}
+\label{tab:dcpl-gate-compare-boldbest}
+\begin{tabular}{llcccc}
+\toprule
+Dataset & Metric & ridge & lr & nn & rf \\
+\midrule
+EleutherAI\_gpt-neox-20b & R2 & 0.5993 & 0.5993 & \textbf{0.6062} & 0.5740 \\
+EleutherAI\_gpt-neox-20b & MRE & 176.33 & 176.33 & 138.38 & \textbf{123.25} \\
+\addlinespace
+Salesforce\_codegen2-16B & R2 & \textbf{0.3116} & 0.3111 & 0.2982 & 0.2014 \\
+Salesforce\_codegen2-16B & MRE & 664.19 & 668.01 & 558.81 & \textbf{482.61} \\
+\addlinespace
+bigcode\_starcoder & R2 & 0.6315 & 0.6315 & \textbf{0.6345} & 0.6073 \\
+bigcode\_starcoder & MRE & 112.36 & 112.36 & 107.16 & \textbf{103.13} \\
+\addlinespace
+bigscience\_mt0-xxl & R2 & 0.3893 & 0.3893 & \textbf{0.3999} & 0.3547 \\
+bigscience\_mt0-xxl & MRE & 266.75 & 266.75 & 236.92 & \textbf{222.53} \\
+\addlinespace
+google\_flan-t5-xl & R2 & 0.6582 & 0.6582 & \textbf{0.6636} & 0.6383 \\
+google\_flan-t5-xl & MRE & 132.57 & 132.57 & 137.69 & \textbf{128.87} \\
+\addlinespace
+google\_flan-t5-xxl & R2 & 0.6528 & 0.6528 & \textbf{0.6546} & 0.6339 \\
+google\_flan-t5-xxl & MRE & 168.63 & 168.63 & 146.12 & \textbf{143.86} \\
+\addlinespace
+google\_flan-ul2 & R2 & \textbf{0.6358} & 0.6358 & 0.6347 & 0.5918 \\
+google\_flan-ul2 & MRE & 167.80 & 167.80 & 154.18 & \textbf{145.32} \\
+\addlinespace
+ibm\_mpt-7b-instruct2 & R2 & 0.4400 & 0.4400 & \textbf{0.4681} & 0.4580 \\
+ibm\_mpt-7b-instruct2 & MRE & 476.89 & 476.89 & 322.87 & \textbf{298.70} \\
+\addlinespace
+llama-13b & R2 & 0.6301 & 0.6301 & \textbf{0.6352} & 0.6107 \\
+llama-13b & MRE & 133.56 & 133.56 & 122.47 & \textbf{117.79} \\
+\addlinespace
+llama-7b & R2 & 0.6532 & 0.6532 & \textbf{0.6592} & 0.6351 \\
+llama-7b & MRE & 118.95 & 118.95 & 111.89 & \textbf{109.03} \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,18 @@
+try to use 2 features on workloads ie. reqnum, n_input_token
+but before that you need to analyse the smpnum (if can be considered as workload predictors as well)
+try re-run it again using 30 time runs
+
+in existing studies that you considered they all use output token as predictors, but it is not relevant for our experiments
+so you need to find the other existing studies instead of use that as the existing studies comparison.
+
+then first of all, you need to compare the best framework on DCPL (configuration) to DICE frameworks
+
+you need to do it for next meeting
+
+Birmingham, 29 Jan 2026
+Moch
+
+
+new meeting February 2026
+
+do statistical test using scootnot

@@ -1,0 +1,20 @@
+\begin{table}
+\caption{R\textsuperscript{2} standard deviation across 5 splits (baseline learners vs. DCPL).}
+\label{tab:r2_std_baseline_vs_dcpl}
+\begin{tabular}{lrrrrrr}
+\toprule
+dataset & lr & ridge & rf\_light & nn & llm\_pilot & dcpl \\
+\midrule
+EleutherAI\_gpt-neox-20b & 0.01 & 0.01 & 0.01 & 0.01 & 0.02 & 0.01 \\
+Salesforce\_codegen2-16B & 0.02 & 0.02 & 0.04 & 0.03 & 0.07 & 0.04 \\
+bigcode\_starcoder & 0.01 & 0.01 & 0.00 & 0.01 & 0.01 & 0.00 \\
+bigscience\_mt0-xxl & 0.01 & 0.01 & 0.01 & 0.02 & 0.04 & 0.01 \\
+google\_flan-t5-xl & 0.01 & 0.01 & 0.01 & 0.02 & 0.01 & 0.01 \\
+google\_flan-t5-xxl & 0.01 & 0.01 & 0.01 & 0.04 & 0.03 & 0.00 \\
+google\_flan-ul2 & 0.01 & 0.01 & 0.00 & 0.00 & 0.02 & 0.00 \\
+ibm\_mpt-7b-instruct2 & 0.01 & 0.01 & 0.02 & 0.04 & 0.04 & 0.02 \\
+llama-13b & 0.01 & 0.01 & 0.00 & 0.01 & 0.00 & 0.00 \\
+llama-7b & 0.00 & 0.00 & 0.00 & 0.01 & 0.01 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,241 @@
+N_train=800 N_test=133972 min_samples=2
+Run 1
+depth1 N_samples of 2 divisions: 779 21
+depth1 DNN_DaL MRE: 402.8586756222668
+depth1 DNN_DaL MAE: 233.48508896531752
+depth1 DNN_DaL RMSE: 557.4275527573933
+depth1 DNN_DaL R2: 0.1864938946035376
+depth1 DNN_DaL_time (minutes): 11.105420168240865
+Best shot rate: 0.97
+Run 2
+depth1 N_samples of 2 divisions: 646 154
+depth1 DNN_DaL MRE: 271.49855660560405
+depth1 DNN_DaL MAE: 204.96409939952184
+depth1 DNN_DaL RMSE: 573.2905405213041
+depth1 DNN_DaL R2: 0.14250292605442327
+depth1 DNN_DaL_time (minutes): 11.466400082906087
+Best shot rate: 0.85
+Run 3
+depth1 N_samples of 2 divisions: 706 94
+depth1 DNN_DaL MRE: 265.1853036544142
+depth1 DNN_DaL MAE: 198.69593615769364
+depth1 DNN_DaL RMSE: 567.1208875403527
+depth1 DNN_DaL R2: 0.16112102475361212
+depth1 DNN_DaL_time (minutes): 11.262929566701253
+Best shot rate: 0.89
+Run 4
+depth1 N_samples of 2 divisions: 791 9
+depth1 DNN_DaL MRE: 364.54415089881604
+depth1 DNN_DaL MAE: 225.20019933942413
+depth1 DNN_DaL RMSE: 555.9374168536207
+depth1 DNN_DaL R2: 0.19091174268793076
+depth1 DNN_DaL_time (minutes): 11.305767583847047
+Best shot rate: 0.98
+Run 5
+depth1 N_samples of 2 divisions: 753 47
+depth1 DNN_DaL MRE: 351.5892941023456
+depth1 DNN_DaL MAE: 222.7463413441225
+depth1 DNN_DaL RMSE: 561.6193616779503
+depth1 DNN_DaL R2: 0.1745642861474792
+depth1 DNN_DaL_time (minutes): 11.312039164702098
+Best shot rate: 0.93
+Run 6
+depth1 N_samples of 2 divisions: 788 12
+depth1 DNN_DaL MRE: 360.34341480120634
+depth1 DNN_DaL MAE: 227.75309180269397
+depth1 DNN_DaL RMSE: 565.2984500442633
+depth1 DNN_DaL R2: 0.16326780061332458
+depth1 DNN_DaL_time (minutes): 11.25168373187383
+Best shot rate: 0.98
+Run 7
+depth1 N_samples of 2 divisions: 731 69
+depth1 DNN_DaL MRE: 336.47375692937015
+depth1 DNN_DaL MAE: 218.9102927626765
+depth1 DNN_DaL RMSE: 561.6879326184119
+depth1 DNN_DaL R2: 0.17571209165536605
+depth1 DNN_DaL_time (minutes): 11.656562169392904
+Best shot rate: 0.92
+Run 8
+depth1 N_samples of 2 divisions: 708 92
+depth1 DNN_DaL MRE: 278.24439132262074
+depth1 DNN_DaL MAE: 209.6790259462732
+depth1 DNN_DaL RMSE: 562.8930158274859
+depth1 DNN_DaL R2: 0.17293010585222635
+depth1 DNN_DaL_time (minutes): 13.197971816857656
+Best shot rate: 0.90
+Run 9
+depth1 N_samples of 2 divisions: 754 46
+depth1 DNN_DaL MRE: 350.2844876425808
+depth1 DNN_DaL MAE: 222.42753813692002
+depth1 DNN_DaL RMSE: 562.1080512587299
+depth1 DNN_DaL R2: 0.17440851043154904
+depth1 DNN_DaL_time (minutes): 11.69815954764684
+Best shot rate: 0.93
+Run 10
+depth1 N_samples of 2 divisions: 661 139
+depth1 DNN_DaL MRE: 281.16684134177274
+depth1 DNN_DaL MAE: 204.47798585680562
+depth1 DNN_DaL RMSE: 572.850442042473
+depth1 DNN_DaL R2: 0.14320140566617456
+depth1 DNN_DaL_time (minutes): 11.4383318344752
+Best shot rate: 0.85
+Run 11
+depth1 N_samples of 2 divisions: 787 13
+depth1 DNN_DaL MRE: 405.2053911127346
+depth1 DNN_DaL MAE: 233.01857988183593
+depth1 DNN_DaL RMSE: 556.5870082221427
+depth1 DNN_DaL R2: 0.19052817459996763
+depth1 DNN_DaL_time (minutes): 11.400290064016978
+Best shot rate: 0.97
+Run 12
+depth1 N_samples of 2 divisions: 780 20
+depth1 DNN_DaL MRE: 366.9822700527926
+depth1 DNN_DaL MAE: 222.07885974602678
+depth1 DNN_DaL RMSE: 551.9444586608864
+depth1 DNN_DaL R2: 0.20324421930051784
+depth1 DNN_DaL_time (minutes): 11.674866183598835
+Best shot rate: 0.97
+Run 13
+depth1 N_samples of 2 divisions: 714 86
+depth1 DNN_DaL MRE: 317.25445297668824
+depth1 DNN_DaL MAE: 212.88815360863052
+depth1 DNN_DaL RMSE: 563.0445687734821
+depth1 DNN_DaL R2: 0.17290607299401606
+depth1 DNN_DaL_time (minutes): 11.414564621448516
+Best shot rate: 0.90
+Run 14
+depth1 N_samples of 2 divisions: 760 40
+depth1 DNN_DaL MRE: 394.63546989931854
+depth1 DNN_DaL MAE: 308.2598417620589
+depth1 DNN_DaL RMSE: 824.5279504869392
+depth1 DNN_DaL R2: -0.7818742474861304
+depth1 DNN_DaL_time (minutes): 11.403115638097127
+Best shot rate: 0.95
+Run 15
+depth1 N_samples of 2 divisions: 737 63
+depth1 DNN_DaL MRE: 331.5080218979655
+depth1 DNN_DaL MAE: 222.00478334518405
+depth1 DNN_DaL RMSE: 561.9248756817464
+depth1 DNN_DaL R2: 0.17381380810028912
+depth1 DNN_DaL_time (minutes): 11.304807098706563
+Best shot rate: 0.92
+Run 16
+depth1 N_samples of 2 divisions: 731 69
+depth1 DNN_DaL MRE: 305.63898690698244
+depth1 DNN_DaL MAE: 214.78824380603265
+depth1 DNN_DaL RMSE: 562.9905823744269
+depth1 DNN_DaL R2: 0.17162011141160105
+depth1 DNN_DaL_time (minutes): 11.393266650040944
+Best shot rate: 0.91
+Run 17
+depth1 N_samples of 2 divisions: 705 95
+depth1 DNN_DaL MRE: 294.4273865268598
+depth1 DNN_DaL MAE: 204.43474887129275
+depth1 DNN_DaL RMSE: 565.8811021016973
+depth1 DNN_DaL R2: 0.16461667844433303
+depth1 DNN_DaL_time (minutes): 11.67934783299764
+Best shot rate: 0.89
+Run 18
+depth1 N_samples of 2 divisions: 661 139
+depth1 DNN_DaL MRE: 311.14383510228197
+depth1 DNN_DaL MAE: 213.9038033130528
+depth1 DNN_DaL RMSE: 571.4422043621055
+depth1 DNN_DaL R2: 0.14739873280612403
+depth1 DNN_DaL_time (minutes): 11.331534481048584
+Best shot rate: 0.86
+Run 19
+depth1 N_samples of 2 divisions: 792 8
+depth1 DNN_DaL MRE: 414.0583908322229
+depth1 DNN_DaL MAE: 233.14294289255798
+depth1 DNN_DaL RMSE: 549.3996211158884
+depth1 DNN_DaL R2: 0.2118613319820728
+depth1 DNN_DaL_time (minutes): 11.310819033781687
+Best shot rate: 0.98
+Run 20
+depth1 N_samples of 2 divisions: 787 13
+depth1 DNN_DaL MRE: 360.8052575681419
+depth1 DNN_DaL MAE: 223.08513737739807
+depth1 DNN_DaL RMSE: 557.192406703949
+depth1 DNN_DaL R2: 0.18930087765557202
+depth1 DNN_DaL_time (minutes): 11.391043484210968
+Best shot rate: 0.97
+Run 21
+depth1 N_samples of 2 divisions: 728 72
+depth1 DNN_DaL MRE: 324.1757630931383
+depth1 DNN_DaL MAE: 222.5823209733604
+depth1 DNN_DaL RMSE: 562.5724260862302
+depth1 DNN_DaL R2: 0.16955228564720393
+depth1 DNN_DaL_time (minutes): 11.419971919059753
+Best shot rate: 0.92
+Run 22
+depth1 N_samples of 2 divisions: 793 7
+depth1 DNN_DaL MRE: 435.40477627783315
+depth1 DNN_DaL MAE: 263.6310021036667
+depth1 DNN_DaL RMSE: 663.3020541064179
+depth1 DNN_DaL R2: -0.1550593757671388
+depth1 DNN_DaL_time (minutes): 11.508845619360606
+Best shot rate: 0.99
+Run 23
+depth1 N_samples of 2 divisions: 697 103
+depth1 DNN_DaL MRE: 306.22835276539945
+depth1 DNN_DaL MAE: 222.14796763970324
+depth1 DNN_DaL RMSE: 565.9617751955335
+depth1 DNN_DaL R2: 0.16211672388468823
+depth1 DNN_DaL_time (minutes): 11.525964868068694
+Best shot rate: 0.90
+Run 24
+depth1 N_samples of 2 divisions: 718 82
+depth1 DNN_DaL MRE: 346.72953372192734
+depth1 DNN_DaL MAE: 218.28566251599034
+depth1 DNN_DaL RMSE: 562.348466313853
+depth1 DNN_DaL R2: 0.17225582174826737
+depth1 DNN_DaL_time (minutes): 11.53273748556773
+Best shot rate: 0.91
+Run 25
+depth1 N_samples of 2 divisions: 777 23
+depth1 DNN_DaL MRE: 394.0717367244598
+depth1 DNN_DaL MAE: 236.5550039864516
+depth1 DNN_DaL RMSE: 568.5550567371878
+depth1 DNN_DaL R2: 0.1526756867446094
+depth1 DNN_DaL_time (minutes): 11.427738511562348
+Best shot rate: 0.96
+Run 26
+depth1 N_samples of 2 divisions: 738 62
+depth1 DNN_DaL MRE: 361.02157872128663
+depth1 DNN_DaL MAE: 227.96794464777605
+depth1 DNN_DaL RMSE: 561.9605668798639
+depth1 DNN_DaL R2: 0.1736077789515137
+depth1 DNN_DaL_time (minutes): 11.479996216297149
+Best shot rate: 0.92
+Run 27
+depth1 N_samples of 2 divisions: 783 17
+depth1 DNN_DaL MRE: 404.5761887183195
+depth1 DNN_DaL MAE: 235.0633063414646
+depth1 DNN_DaL RMSE: 557.9508095275056
+depth1 DNN_DaL R2: 0.18281026833619407
+depth1 DNN_DaL_time (minutes): 11.653982750574748
+Best shot rate: 0.98
+Run 28
+depth1 N_samples of 2 divisions: 718 82
+depth1 DNN_DaL MRE: 305.39277299540254
+depth1 DNN_DaL MAE: 215.1706699885684
+depth1 DNN_DaL RMSE: 562.2814028551146
+depth1 DNN_DaL R2: 0.17349362393047318
+depth1 DNN_DaL_time (minutes): 11.783227201302847
+Best shot rate: 0.90
+Run 29
+depth1 N_samples of 2 divisions: 754 46
+depth1 DNN_DaL MRE: 324.40172976280917
+depth1 DNN_DaL MAE: 219.71138955237296
+depth1 DNN_DaL RMSE: 562.6440294329955
+depth1 DNN_DaL R2: 0.16982940464438023
+depth1 DNN_DaL_time (minutes): 11.476679118474324
+Best shot rate: 0.94
+Run 30
+depth1 N_samples of 2 divisions: 655 145
+depth1 DNN_DaL MRE: 265.794836986769
+depth1 DNN_DaL MAE: 202.56141578658276
+depth1 DNN_DaL RMSE: 573.0373856356932
+depth1 DNN_DaL R2: 0.14381811435713798
+depth1 DNN_DaL_time (minutes): 11.526289300123851
+Best shot rate: 0.85

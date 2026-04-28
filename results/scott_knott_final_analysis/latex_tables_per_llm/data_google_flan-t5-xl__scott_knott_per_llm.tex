@@ -1,0 +1,108 @@
+% ================================
+% LLM: data_google_flan-t5-xl
+% ================================
+\section*{LLM: data\_google\_flan-t5-xl}
+
+\subsubsection*{Metric: R2}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_google\_flan-t5-xl on R2 (Mean$\pm$Std over runs).}
+\label{tab:sk_data_google_flan-t5-xl_R2}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_ridge & \textbf{1} & \textbf{0.658$\pm$0.016} & 0.021 & 30 \\
+dcpl\_gate\_lr & 2 & 0.658$\pm$0.016 & 0.021 & 30 \\
+dcpl\_gate\_nn & 3 & 0.664$\pm$0.016 & 0.021 & 30 \\
+dcpl\_gate\_rf & 3 & 0.638$\pm$0.018 & 0.029 & 30 \\
+baseline\_rf\_light & 4 & 0.649$\pm$0.022 & 0.036 & 30 \\
+baseline\_nn & 5 & 0.455$\pm$0.021 & 0.029 & 30 \\
+baseline\_llm\_pilot & 6 & 0.497$\pm$0.023 & 0.029 & 30 \\
+baseline\_lr & 6 & 0.292$\pm$0.007 & 0.011 & 30 \\
+baseline\_ridge & 7 & 0.292$\pm$0.007 & 0.011 & 30 \\
+baseline\_DaL & 8 & 0.135$\pm$0.033 & 0.025 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: MAE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_google\_flan-t5-xl on MAE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_google_flan-t5-xl_MAE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} baseline\_rf\_light & \textbf{1} & \textbf{85.302$\pm$1.104} & 1.075 & 30 \\
+dcpl\_gate\_ridge & 2 & 85.780$\pm$1.032 & 1.159 & 30 \\
+dcpl\_gate\_rf & 3 & 85.858$\pm$1.018 & 1.158 & 30 \\
+dcpl\_gate\_nn & 4 & 84.626$\pm$1.952 & 2.725 & 30 \\
+dcpl\_gate\_lr & 4 & 85.780$\pm$1.032 & 1.159 & 30 \\
+baseline\_ridge & 4 & 141.428$\pm$1.272 & 2.033 & 30 \\
+baseline\_nn & 5 & 111.046$\pm$3.067 & 3.051 & 30 \\
+baseline\_llm\_pilot & 6 & 108.009$\pm$1.427 & 1.867 & 30 \\
+baseline\_lr & 6 & 141.429$\pm$1.272 & 2.033 & 30 \\
+baseline\_DaL & 7 & 154.276$\pm$11.110 & 13.050 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: RMSE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_google\_flan-t5-xl on RMSE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_google_flan-t5-xl_RMSE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_ridge & \textbf{1} & \textbf{254.040$\pm$8.013} & 10.810 & 30 \\
+dcpl\_gate\_lr & 2 & 254.040$\pm$8.013 & 10.810 & 30 \\
+dcpl\_gate\_nn & 3 & 252.043$\pm$8.024 & 11.262 & 30 \\
+dcpl\_gate\_rf & 3 & 261.309$\pm$8.987 & 13.307 & 30 \\
+baseline\_rf\_light & 4 & 257.481$\pm$8.120 & 8.046 & 30 \\
+baseline\_nn & 5 & 320.857$\pm$11.430 & 16.368 & 30 \\
+baseline\_llm\_pilot & 6 & 308.329$\pm$11.066 & 14.860 & 30 \\
+baseline\_lr & 6 & 365.790$\pm$14.184 & 18.242 & 30 \\
+baseline\_ridge & 7 & 365.790$\pm$14.184 & 18.242 & 30 \\
+baseline\_DaL & 8 & 405.148$\pm$7.208 & 6.294 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: MRE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_google\_flan-t5-xl on MRE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_google_flan-t5-xl_MRE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} baseline\_rf\_light & \textbf{1} & \textbf{127.615$\pm$1.846} & 2.921 & 30 \\
+dcpl\_gate\_rf & 2 & 128.869$\pm$1.884 & 2.697 & 30 \\
+dcpl\_gate\_ridge & 3 & 132.574$\pm$2.700 & 2.830 & 30 \\
+dcpl\_gate\_lr & 4 & 132.575$\pm$2.700 & 2.830 & 30 \\
+dcpl\_gate\_nn & 4 & 137.694$\pm$18.330 & 23.212 & 30 \\
+baseline\_nn & 5 & 155.432$\pm$10.944 & 13.899 & 30 \\
+baseline\_llm\_pilot & 6 & 203.066$\pm$10.526 & 11.585 & 30 \\
+baseline\_lr & 6 & 389.622$\pm$8.681 & 9.759 & 30 \\
+baseline\_ridge & 7 & 389.615$\pm$8.681 & 9.759 & 30 \\
+baseline\_DaL & 8 & 585.442$\pm$103.991 & 147.947 & 30 \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,11 @@
+per_model_file,target,cv,llm_pilot,lr,nn,rf_light,ridge,dcpl_gate=ridge
+data_EleutherAI_gpt-neox-20b,Target_throughput_tokens_per_sec,split80_20,213.642,354.090,177.286,173.891,354.086,154.738$\pm$2.983
+data_Salesforce_codegen2-16B,Target_throughput_tokens_per_sec,split80_20,1002.207,1050.089,1082.000,964.040,1050.261,1194.178$\pm$217.280
+data_bigcode_starcoder,Target_throughput_tokens_per_sec,split80_20,143.539,232.374,156.908,113.930,232.372,110.335$\pm$1.386
+data_bigscience_mt0-xxl,Target_throughput_tokens_per_sec,split80_20,412.505,439.203,617.232,380.704,439.221,408.135$\pm$24.305
+data_google_flan-t5-xl,Target_throughput_tokens_per_sec,split80_20,309.592,264.251,319.591,273.444,264.251,250.892$\pm$4.186
+data_google_flan-t5-xxl,Target_throughput_tokens_per_sec,split80_20,386.171,337.011,389.627,345.181,337.010,307.629$\pm$7.189
+data_google_flan-ul2,Target_throughput_tokens_per_sec,split80_20,277.716,286.944,279.665,253.234,286.942,248.402$\pm$7.500
+data_ibm_mpt-7b-instruct2,Target_throughput_tokens_per_sec,split80_20,888.506,781.984,1187.052,843.777,782.038,910.834$\pm$52.647
+data_llama-13b,Target_throughput_tokens_per_sec,split80_20,189.584,263.281,196.755,158.546,263.279,151.062$\pm$2.577
+data_llama-7b,Target_throughput_tokens_per_sec,split80_20,179.466,245.676,159.204,151.163,245.675,143.868$\pm$2.091

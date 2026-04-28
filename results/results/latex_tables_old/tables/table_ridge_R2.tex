@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Baseline vs DICE (learner=ridge) on R2 (mean over runs). $\Delta$ = DICE - Baseline.}
+\label{tab:baseline-vs-dice-ridge-R2}
+\begin{tabular}{lrrrr}
+\toprule
+Dataset & Baseline & DICE & $\Delta$ & $\%\Delta$ \\
+\midrule
+bigcode\_starcoder & 0.307 & 0.350 & 0.043 & 13.97\% \\
+llama-7b & 0.283 & 0.321 & 0.038 & 13.46\% \\
+llama-13b & 0.295 & 0.330 & 0.035 & 11.82\% \\
+EleutherAI\_gpt-neox-20b & 0.293 & 0.325 & 0.032 & 10.87\% \\
+google\_flan-t5-xl & 0.264 & 0.293 & 0.030 & 11.24\% \\
+bigscience\_mt0-xxl & 0.192 & 0.218 & 0.026 & 13.37\% \\
+google\_flan-t5-xxl & 0.251 & 0.276 & 0.025 & 10.15\% \\
+ibm\_mpt-7b-instruct2 & 0.191 & 0.206 & 0.014 & 7.42\% \\
+google\_flan-ul2 & 0.270 & 0.281 & 0.012 & 4.37\% \\
+Salesforce\_codegen2-16B & 0.137 & 0.137 & -0.000 & -0.00\% \\
+\bottomrule
+\end{tabular}
+\end{table}

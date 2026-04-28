@@ -1,0 +1,108 @@
+% ================================
+% LLM: data_bigcode_starcoder
+% ================================
+\section*{LLM: data\_bigcode\_starcoder}
+
+\subsubsection*{Metric: R2}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_bigcode\_starcoder on R2 (Mean$\pm$Std over runs).}
+\label{tab:sk_data_bigcode_starcoder_R2}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_ridge & \textbf{1} & \textbf{0.631$\pm$0.015} & 0.019 & 30 \\
+dcpl\_gate\_lr & 2 & 0.631$\pm$0.015 & 0.019 & 30 \\
+baseline\_rf\_light & 3 & 0.622$\pm$0.018 & 0.028 & 30 \\
+dcpl\_gate\_nn & 4 & 0.634$\pm$0.016 & 0.024 & 30 \\
+dcpl\_gate\_rf & 4 & 0.607$\pm$0.022 & 0.028 & 30 \\
+baseline\_nn & 5 & 0.453$\pm$0.018 & 0.016 & 30 \\
+baseline\_ridge & 6 & 0.317$\pm$0.007 & 0.008 & 30 \\
+baseline\_llm\_pilot & 7 & 0.489$\pm$0.015 & 0.021 & 30 \\
+baseline\_lr & 7 & 0.317$\pm$0.007 & 0.008 & 30 \\
+baseline\_DaL & 7 & 0.129$\pm$0.180 & 0.014 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: MAE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_bigcode\_starcoder on MAE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_bigcode_starcoder_MAE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_nn & \textbf{1} & \textbf{128.697$\pm$2.243} & 1.465 & 30 \\
+\rowcolor{red!15} dcpl\_gate\_lr & \textbf{1} & \textbf{130.760$\pm$1.667} & 2.204 & 30 \\
+baseline\_rf\_light & 2 & 130.178$\pm$1.693 & 1.479 & 30 \\
+dcpl\_gate\_ridge & 3 & 130.760$\pm$1.667 & 2.204 & 30 \\
+dcpl\_gate\_rf & 4 & 132.095$\pm$2.016 & 3.249 & 30 \\
+baseline\_nn & 5 & 162.894$\pm$3.458 & 5.418 & 30 \\
+baseline\_llm\_pilot & 6 & 157.194$\pm$2.094 & 2.878 & 30 \\
+baseline\_lr & 6 & 204.531$\pm$1.642 & 2.140 & 30 \\
+baseline\_ridge & 7 & 204.530$\pm$1.642 & 2.140 & 30 \\
+baseline\_DaL & 8 & 223.987$\pm$20.125 & 13.789 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: RMSE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_bigcode\_starcoder on RMSE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_bigcode_starcoder_RMSE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_lr & \textbf{1} & \textbf{374.522$\pm$10.754} & 7.543 & 30 \\
+dcpl\_gate\_nn & 2 & 372.969$\pm$10.652 & 9.046 & 30 \\
+dcpl\_gate\_ridge & 2 & 374.522$\pm$10.754 & 7.543 & 30 \\
+dcpl\_gate\_rf & 2 & 386.532$\pm$13.006 & 16.353 & 30 \\
+baseline\_rf\_light & 3 & 379.295$\pm$10.920 & 11.172 & 30 \\
+baseline\_nn & 4 & 456.442$\pm$12.169 & 12.256 & 30 \\
+baseline\_llm\_pilot & 5 & 440.949$\pm$10.120 & 7.976 & 30 \\
+baseline\_lr & 5 & 509.886$\pm$13.123 & 12.859 & 30 \\
+baseline\_ridge & 6 & 509.886$\pm$13.123 & 12.859 & 30 \\
+baseline\_DaL & 7 & 574.859$\pm$50.060 & 5.195 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: MRE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_bigcode\_starcoder on MRE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_bigcode_starcoder_MRE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} baseline\_rf\_light & \textbf{1} & \textbf{101.694$\pm$1.446} & 1.645 & 30 \\
+dcpl\_gate\_rf & 2 & 103.132$\pm$1.677 & 1.662 & 30 \\
+dcpl\_gate\_nn & 3 & 107.158$\pm$7.825 & 8.015 & 30 \\
+dcpl\_gate\_ridge & 4 & 112.361$\pm$2.529 & 3.499 & 30 \\
+baseline\_nn & 5 & 126.150$\pm$6.359 & 5.885 & 30 \\
+dcpl\_gate\_lr & 6 & 112.361$\pm$2.529 & 3.500 & 30 \\
+baseline\_ridge & 6 & 255.333$\pm$4.358 & 4.256 & 30 \\
+baseline\_llm\_pilot & 7 & 147.132$\pm$3.679 & 3.241 & 30 \\
+baseline\_lr & 7 & 255.336$\pm$4.358 & 4.257 & 30 \\
+baseline\_DaL & 8 & 341.055$\pm$47.023 & 60.586 & 30 \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.05}
+\caption{Scott--Knott summary for metric MRE. Each dataset (LLM) has two subcolumns: rank $r$ and Mean (Std). Cells with $r=1$ are highlighted.}
+\label{tab:sk_paired_mre}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{2.4cm}|p{0.35cm}p{2.15cm}|p{0.35cm}p{2.15cm}|p{0.35cm}p{2.15cm}|p{0.35cm}p{2.15cm}|p{0.35cm}p{2.15cm}|p{0.35cm}p{2.15cm}|p{0.35cm}p{2.15cm}|p{0.35cm}p{2.15cm}|p{0.35cm}p{2.15cm}|p{0.35cm}p{2.15cm}}
+\hline
+\textbf{Algorithm} & \multicolumn{2}{c|}{\textbf{data\_EleutherAI\_gpt-neox-20b}} & \multicolumn{2}{c|}{\textbf{data\_Salesforce\_codegen2-16B}} & \multicolumn{2}{c|}{\textbf{data\_bigcode\_starcoder}} & \multicolumn{2}{c|}{\textbf{data\_bigscience\_mt0-xxl}} & \multicolumn{2}{c|}{\textbf{data\_google\_flan-t5-xl}} & \multicolumn{2}{c|}{\textbf{data\_google\_flan-t5-xxl}} & \multicolumn{2}{c|}{\textbf{data\_google\_flan-ul2}} & \multicolumn{2}{c|}{\textbf{data\_ibm\_mpt-7b-instruct2}} & \multicolumn{2}{c|}{\textbf{data\_llama-13b}} & \multicolumn{2}{c|}{\textbf{data\_llama-7b}} \\ \cline{2-21}
+  & \textbf{r} & \textbf{Mean (Std)} & \textbf{r} & \textbf{Mean (Std)} & \textbf{r} & \textbf{Mean (Std)} & \textbf{r} & \textbf{Mean (Std)} & \textbf{r} & \textbf{Mean (Std)} & \textbf{r} & \textbf{Mean (Std)} & \textbf{r} & \textbf{Mean (Std)} & \textbf{r} & \textbf{Mean (Std)} & \textbf{r} & \textbf{Mean (Std)} & \textbf{r} & \textbf{Mean (Std)} \\
+\hline
+dcpl\_gate\_rf & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{123.255 (2.593)} & 3 & 482.610 (52.206) & 2 & 103.132 (1.677) & 2 & 222.530 (15.739) & 2 & 128.869 (1.884) & 2 & 143.855 (3.165) & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{145.316 (3.586)} & 2 & 298.697 (15.725) & 2 & 117.789 (1.578) & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{109.033 (1.024)} \\
+baseline\_rf\_light & 6 & 122.671 (2.758) & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{287.375 (21.855)} & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{101.694 (1.446)} & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{189.202 (12.518)} & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{127.615 (1.846)} & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{143.471 (3.270)} & 6 & 138.251 (3.096) & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{250.172 (8.541)} & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{117.326 (1.479)} & 2 & 110.154 (1.077) \\
+dcpl\_gate\_nn & 2 & 138.375 (16.986) & 4 & 558.814 (226.715) & 3 & 107.158 (7.825) & 3 & 236.924 (47.034) & 4 & 137.694 (18.330) & 2 & 146.118 (22.214) & 2 & 154.175 (27.554) & 2 & 322.867 (65.470) & 3 & 122.473 (14.905) & 3 & 111.895 (11.195) \\
+baseline\_nn & 3 & 153.495 (16.117) & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{396.741 (71.493)} & 5 & 126.150 (6.359) & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{231.979 (63.563)} & 5 & 155.432 (10.944) & 3 & 180.420 (12.511) & 3 & 164.185 (9.876) & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{298.884 (83.718)} & 5 & 144.142 (12.263) & 5 & 136.990 (8.785) \\
+dcpl\_gate\_ridge & 5 & 176.327 (8.012) & 5 & 664.195 (96.363) & 4 & 112.361 (2.529) & 5 & 266.747 (27.071) & 3 & 132.574 (2.700) & 2 & 168.631 (4.494) & 4 & 167.803 (5.616) & 4 & 476.890 (36.172) & 4 & 133.560 (3.204) & 4 & 118.953 (1.825) \\
+dcpl\_gate\_lr & 4 & 176.327 (8.013) & 6 & 668.007 (98.906) & 6 & 112.361 (2.529) & 6 & 266.751 (27.078) & 4 & 132.575 (2.700) & 4 & 168.631 (4.494) & 5 & 167.804 (5.618) & 3 & 476.888 (36.178) & 6 & 133.560 (3.204) & 6 & 118.953 (1.825) \\
+baseline\_ridge & 6 & 399.157 (13.699) & \cellcolor[HTML]{CBFECE}\textbf{1} & \cellcolor[HTML]{CBFECE}\textbf{549.125 (54.941)} & 6 & 255.333 (4.358) & 6 & 289.284 (18.678) & 7 & 389.615 (8.681) & 4 & 436.384 (11.231) & 6 & 347.085 (12.196) & 6 & 707.632 (33.341) & 6 & 312.412 (6.317) & 6 & 278.951 (3.972) \\
+baseline\_llm\_pilot & 7 & 195.359 (13.205) & 2 & 385.135 (27.807) & 7 & 147.132 (3.679) & 4 & 217.355 (8.590) & 6 & 203.066 (10.526) & 5 & 221.604 (9.140) & 7 & 202.380 (10.933) & 5 & 350.837 (22.649) & 7 & 171.635 (4.375) & 7 & 161.304 (3.484) \\
+baseline\_lr & 7 & 399.165 (13.699) & 2 & 549.461 (54.973) & 7 & 255.336 (4.358) & 4 & 289.332 (18.684) & 6 & 389.622 (8.681) & 5 & 436.397 (11.232) & 7 & 347.103 (12.197) & 5 & 707.747 (33.346) & 7 & 312.417 (6.317) & 7 & 278.953 (3.972) \\
+baseline\_DaL & 8 & 511.423 (73.480) & 7 & 880.869 (269.236) & 8 & 341.055 (47.023) & 7 & 538.129 (130.936) & 8 & 585.442 (103.991) & 6 & 698.439 (119.106) & 8 & 535.695 (81.252) & 7 & 1119.096 (442.281) & 8 & 447.711 (66.049) & 8 & 378.092 (54.933) \\
+\hline
+\end{tabular}
+}% end resizebox
+\end{table}

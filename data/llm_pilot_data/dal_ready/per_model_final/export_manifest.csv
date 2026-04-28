@@ -1,0 +1,11 @@
+per_model_file,in_path,out_path,rows,n_features,target
+data_EleutherAI_gpt-neox-20b,data/llm_pilot_data/raw_data/per_model/data_EleutherAI_gpt-neox-20b.csv,data/llm_pilot_data/dal_ready/per_model_final/data_EleutherAI_gpt-neox-20b__final_for_dal.csv,89719,28,Target_throughput_tokens_per_sec
+data_Salesforce_codegen2-16B,data/llm_pilot_data/raw_data/per_model/data_Salesforce_codegen2-16B.csv,data/llm_pilot_data/dal_ready/per_model_final/data_Salesforce_codegen2-16B__final_for_dal.csv,6025,28,Target_throughput_tokens_per_sec
+data_bigcode_starcoder,data/llm_pilot_data/raw_data/per_model/data_bigcode_starcoder.csv,data/llm_pilot_data/dal_ready/per_model_final/data_bigcode_starcoder__final_for_dal.csv,134772,28,Target_throughput_tokens_per_sec
+data_bigscience_mt0-xxl,data/llm_pilot_data/raw_data/per_model/data_bigscience_mt0-xxl.csv,data/llm_pilot_data/dal_ready/per_model_final/data_bigscience_mt0-xxl__final_for_dal.csv,10706,28,Target_throughput_tokens_per_sec
+data_google_flan-t5-xl,data/llm_pilot_data/raw_data/per_model/data_google_flan-t5-xl.csv,data/llm_pilot_data/dal_ready/per_model_final/data_google_flan-t5-xl__final_for_dal.csv,138299,28,Target_throughput_tokens_per_sec
+data_google_flan-t5-xxl,data/llm_pilot_data/raw_data/per_model/data_google_flan-t5-xxl.csv,data/llm_pilot_data/dal_ready/per_model_final/data_google_flan-t5-xxl__final_for_dal.csv,77922,28,Target_throughput_tokens_per_sec
+data_google_flan-ul2,data/llm_pilot_data/raw_data/per_model/data_google_flan-ul2.csv,data/llm_pilot_data/dal_ready/per_model_final/data_google_flan-ul2__final_for_dal.csv,45856,28,Target_throughput_tokens_per_sec
+data_ibm_mpt-7b-instruct2,data/llm_pilot_data/raw_data/per_model/data_ibm_mpt-7b-instruct2.csv,data/llm_pilot_data/dal_ready/per_model_final/data_ibm_mpt-7b-instruct2__final_for_dal.csv,19086,28,Target_throughput_tokens_per_sec
+data_llama-13b,data/llm_pilot_data/raw_data/per_model/data_llama-13b.csv,data/llm_pilot_data/dal_ready/per_model_final/data_llama-13b__final_for_dal.csv,119291,28,Target_throughput_tokens_per_sec
+data_llama-7b,data/llm_pilot_data/raw_data/per_model/data_llama-7b.csv,data/llm_pilot_data/dal_ready/per_model_final/data_llama-7b__final_for_dal.csv,171218,28,Target_throughput_tokens_per_sec

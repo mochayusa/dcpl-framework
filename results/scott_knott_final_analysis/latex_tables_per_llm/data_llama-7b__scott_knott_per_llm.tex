@@ -1,0 +1,108 @@
+% ================================
+% LLM: data_llama-7b
+% ================================
+\section*{LLM: data\_llama-7b}
+
+\subsubsection*{Metric: R2}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_llama-7b on R2 (Mean$\pm$Std over runs).}
+\label{tab:sk_data_llama-7b_R2}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_ridge & \textbf{1} & \textbf{0.653$\pm$0.015} & 0.016 & 30 \\
+dcpl\_gate\_lr & 2 & 0.653$\pm$0.015 & 0.016 & 30 \\
+dcpl\_gate\_nn & 3 & 0.659$\pm$0.016 & 0.019 & 30 \\
+dcpl\_gate\_rf & 3 & 0.635$\pm$0.019 & 0.020 & 30 \\
+baseline\_rf\_light & 4 & 0.644$\pm$0.021 & 0.028 & 30 \\
+baseline\_nn & 5 & 0.450$\pm$0.017 & 0.019 & 30 \\
+baseline\_llm\_pilot & 6 & 0.480$\pm$0.018 & 0.023 & 30 \\
+baseline\_lr & 6 & 0.307$\pm$0.006 & 0.008 & 30 \\
+baseline\_ridge & 7 & 0.307$\pm$0.006 & 0.008 & 30 \\
+baseline\_DaL & 8 & 0.151$\pm$0.026 & 0.028 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: MAE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_llama-7b on MAE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_llama-7b_MAE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_nn & \textbf{1} & \textbf{157.407$\pm$2.856} & 2.849 & 30 \\
+\rowcolor{red!15} dcpl\_gate\_rf & \textbf{1} & \textbf{161.102$\pm$1.988} & 2.384 & 30 \\
+baseline\_rf\_light & 2 & 160.791$\pm$1.657 & 2.134 & 30 \\
+dcpl\_gate\_ridge & 3 & 161.421$\pm$1.664 & 2.400 & 30 \\
+baseline\_nn & 4 & 205.882$\pm$4.043 & 5.568 & 30 \\
+dcpl\_gate\_lr & 5 & 161.421$\pm$1.664 & 2.400 & 30 \\
+baseline\_ridge & 5 & 262.410$\pm$1.803 & 2.629 & 30 \\
+baseline\_llm\_pilot & 6 & 200.236$\pm$2.099 & 2.955 & 30 \\
+baseline\_lr & 6 & 262.411$\pm$1.803 & 2.629 & 30 \\
+baseline\_DaL & 7 & 282.584$\pm$14.901 & 21.051 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: RMSE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_llama-7b on RMSE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_llama-7b_RMSE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_ridge & \textbf{1} & \textbf{472.189$\pm$9.687} & 12.533 & 30 \\
+dcpl\_gate\_lr & 2 & 472.189$\pm$9.687 & 12.533 & 30 \\
+dcpl\_gate\_nn & 3 & 468.046$\pm$10.631 & 11.742 & 30 \\
+dcpl\_gate\_rf & 3 & 484.293$\pm$10.762 & 14.051 & 30 \\
+baseline\_rf\_light & 4 & 478.189$\pm$10.303 & 11.729 & 30 \\
+baseline\_nn & 5 & 594.745$\pm$13.240 & 17.912 & 30 \\
+baseline\_llm\_pilot & 6 & 578.270$\pm$12.965 & 14.401 & 30 \\
+baseline\_lr & 6 & 667.864$\pm$17.858 & 26.256 & 30 \\
+baseline\_ridge & 7 & 667.864$\pm$17.858 & 26.256 & 30 \\
+baseline\_DaL & 8 & 738.756$\pm$10.981 & 11.950 & 30 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Metric: MRE}
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\caption{Scott--Knott per-method summary for data\_llama-7b on MRE (Mean$\pm$Std over runs).}
+\label{tab:sk_data_llama-7b_MRE}
+\begin{tabular}{l|c|c|c|c}
+\hline
+\textbf{Method} & \textbf{Rank} & \textbf{Mean$\pm$Std} & \textbf{IQR} & \textbf{$n$} \\
+\hline
+\rowcolor{red!15} dcpl\_gate\_rf & \textbf{1} & \textbf{109.033$\pm$1.024} & 0.902 & 30 \\
+baseline\_rf\_light & 2 & 110.154$\pm$1.077 & 1.324 & 30 \\
+dcpl\_gate\_nn & 3 & 111.895$\pm$11.195 & 14.795 & 30 \\
+dcpl\_gate\_ridge & 4 & 118.953$\pm$1.825 & 2.448 & 30 \\
+baseline\_nn & 5 & 136.990$\pm$8.785 & 12.595 & 30 \\
+dcpl\_gate\_lr & 6 & 118.953$\pm$1.825 & 2.449 & 30 \\
+baseline\_ridge & 6 & 278.951$\pm$3.972 & 5.196 & 30 \\
+baseline\_llm\_pilot & 7 & 161.304$\pm$3.484 & 3.391 & 30 \\
+baseline\_lr & 7 & 278.953$\pm$3.972 & 5.197 & 30 \\
+baseline\_DaL & 8 & 378.092$\pm$54.933 & 87.130 & 30 \\
+\hline
+\end{tabular}
+\end{table}

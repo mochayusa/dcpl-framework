@@ -1,0 +1,62 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Baseline vs best DCPL comparison using mean over runs. Best values per dataset and metric are shown in bold ($R^2$: higher is better; MAE/RMSE/MRE: lower is better).}
+\label{tab:baseline-vs-best-dcpl}
+\begin{tabular}{llcccccc}
+\toprule
+Dataset & Metric & lr & ridge & nn & rf\_light & llm\_pilot & Best DCPL \\
+\midrule
+data\_EleutherAI\_gpt-neox-20b & R$^2$ & 0.3113 & 0.3113 & 0.4382 & 0.5811 & 0.4774 & \textbf{0.6062 (nn)} \\
+ & MAE & 196.37 & 196.37 & 158.77 & 130.12 & 152.60 & \textbf{126.70 (nn)} \\
+ & RMSE & 488.85 & 488.85 & 441.44 & 380.89 & 425.73 & \textbf{369.42 (nn)} \\
+ & MRE & 399.16 & 399.16 & 153.49 & \textbf{122.67} & 195.36 & 123.25 (rf) \\
+\addlinespace
+data\_Salesforce\_codegen2-16B & R$^2$ & 0.2377 & 0.2378 & 0.3048 & 0.2877 & \textbf{0.3612} & 0.3116 (ridge) \\
+ & MAE & 141.02 & 141.00 & 125.15 & 121.76 & \textbf{116.09} & 123.80 (nn) \\
+ & RMSE & 347.86 & 347.86 & 330.90 & 333.37 & \textbf{316.98} & 329.23 (ridge) \\
+ & MRE & 549.46 & 549.13 & 396.74 & \textbf{287.38} & 385.13 & 482.61 (rf) \\
+\addlinespace
+data\_bigcode\_starcoder & R$^2$ & 0.3174 & 0.3174 & 0.4527 & 0.6219 & 0.4892 & \textbf{0.6345 (nn)} \\
+ & MAE & 204.53 & 204.53 & 162.89 & 130.18 & 157.19 & \textbf{128.70 (nn)} \\
+ & RMSE & 509.89 & 509.89 & 456.44 & 379.29 & 440.95 & \textbf{372.97 (nn)} \\
+ & MRE & 255.34 & 255.33 & 126.15 & \textbf{101.69} & 147.13 & 103.13 (rf) \\
+\addlinespace
+data\_bigscience\_mt0-xxl & R$^2$ & 0.2774 & 0.2774 & 0.3804 & 0.3347 & \textbf{0.4423} & 0.3999 (nn) \\
+ & MAE & 197.23 & 197.22 & 175.07 & 164.99 & \textbf{158.12} & 161.63 (nn) \\
+ & RMSE & 447.15 & 447.15 & 413.14 & 427.48 & \textbf{391.90} & 406.93 (nn) \\
+ & MRE & 289.33 & 289.28 & 231.98 & \textbf{189.20} & 217.35 & 222.53 (rf) \\
+\addlinespace
+data\_google\_flan-t5-xl & R$^2$ & 0.2924 & 0.2924 & 0.4551 & 0.6486 & 0.4967 & \textbf{0.6636 (nn)} \\
+ & MAE & 141.43 & 141.43 & 111.05 & 85.30 & 108.01 & \textbf{84.63 (nn)} \\
+ & RMSE & 365.79 & 365.79 & 320.86 & 257.48 & 308.33 & \textbf{252.04 (nn)} \\
+ & MRE & 389.62 & 389.62 & 155.43 & \textbf{127.62} & 203.07 & 128.87 (rf) \\
+\addlinespace
+data\_google\_flan-t5-xxl & R$^2$ & 0.2917 & 0.2917 & 0.4372 & 0.6340 & 0.4925 & \textbf{0.6546 (nn)} \\
+ & MAE & 135.52 & 135.52 & 109.57 & 83.67 & 104.69 & \textbf{81.06 (nn)} \\
+ & RMSE & 345.88 & 345.88 & 308.17 & 248.12 & 292.59 & \textbf{241.30 (nn)} \\
+ & MRE & 436.40 & 436.38 & 180.42 & \textbf{143.47} & 221.60 & 143.86 (rf) \\
+\addlinespace
+data\_google\_flan-ul2 & R$^2$ & 0.2978 & 0.2978 & 0.4359 & 0.6149 & 0.5034 & \textbf{0.6358 (ridge)} \\
+ & MAE & 122.86 & 122.86 & 99.26 & 78.21 & 94.12 & \textbf{77.75 (nn)} \\
+ & RMSE & 313.39 & 313.39 & 280.68 & 230.86 & 263.12 & \textbf{224.91 (ridge)} \\
+ & MRE & 347.10 & 347.08 & 164.19 & \textbf{138.25} & 202.38 & 145.32 (rf) \\
+\addlinespace
+data\_ibm\_mpt-7b-instruct2 & R$^2$ & 0.2833 & 0.2833 & 0.4007 & 0.3229 & 0.4398 & \textbf{0.4681 (nn)} \\
+ & MAE & 267.38 & 267.37 & 224.07 & 212.36 & 208.75 & \textbf{194.59 (nn)} \\
+ & RMSE & 646.68 & 646.68 & 591.17 & 626.97 & 571.36 & \textbf{556.53 (nn)} \\
+ & MRE & 707.75 & 707.63 & 298.88 & \textbf{250.17} & 350.84 & 298.70 (rf) \\
+\addlinespace
+data\_llama-13b & R$^2$ & 0.3149 & 0.3149 & 0.4513 & 0.6198 & 0.4848 & \textbf{0.6352 (nn)} \\
+ & MAE & 210.83 & 210.83 & 167.92 & 133.82 & 161.90 & \textbf{131.03 (nn)} \\
+ & RMSE & 529.47 & 529.47 & 473.73 & 394.08 & 458.97 & \textbf{386.18 (nn)} \\
+ & MRE & 312.42 & 312.41 & 144.14 & \textbf{117.33} & 171.63 & 117.79 (rf) \\
+\addlinespace
+data\_llama-7b & R$^2$ & 0.3070 & 0.3070 & 0.4501 & 0.6440 & 0.4801 & \textbf{0.6592 (nn)} \\
+ & MAE & 262.41 & 262.41 & 205.88 & 160.79 & 200.24 & \textbf{157.41 (nn)} \\
+ & RMSE & 667.86 & 667.86 & 594.74 & 478.19 & 578.27 & \textbf{468.05 (nn)} \\
+ & MRE & 278.95 & 278.95 & 136.99 & 110.15 & 161.30 & \textbf{109.03 (rf)} \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}
